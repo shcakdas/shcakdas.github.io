@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="nima taherinejad" />
+		<meta name="copyright" content="nima taherinejad" />
+		<title> MiM Webinars </title>
+		
+		
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+		<style>
+		</style>
+		
+		
+		<script src="m1.js">
+		</script>
+		
+		<header>
+		</header>
+	</head>
+
+<body onload="men2('next')">
+
+
+<script>
+
+
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+var target = new Date("June 7, 2021 14:00:00Z");
+var targetmn = target.getUTCMonth();
+var targetd = target.getUTCDate();
+var targeth = target.getUTCHours();
+var targetm = target.getUTCMinutes();
+var targets = target.getUTCSeconds();
+var targetInS = (((targetmn*31+targetd)*24+targeth)*60+targetm)*60+targets;
+
+// Set the date we're counting down to
+//  var countDownDate = Date.UTC(2021,5,12,18,1);
+  // Get today's date and time
+  var now = new Date();
+  var nowmn = now.getUTCMonth();
+  var nowd = now.getUTCDate();
+  var nowh = now.getUTCHours();
+  var nowm = now.getUTCMinutes();
+  var nows = now.getUTCSeconds();
+  var nowInS = (((nowmn*31+nowd)*24+nowh)*60+nowm)*60+nows;
+  var nowOffset = now.getTimezoneOffset();
+  // Find the distance between now and the count down date
+  var distance = 1000 *(targetInS - nowInS) ;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="countdown"
+  document.getElementById("countdown").innerHTML = "Webinar starting in " + days + " days " + hours + " hours "
+  + minutes + " minutes " + seconds + " seconds "  ;
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "Webinar in progress";
+  }
+  
+  if (distance < -5400000) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "Webinar ended";
+  }
+}, 1000);
+</script>
+
+
+
+<div class="center">
+
+<div class="topheader">
+		<h1 class="top"> 
+			<a href="index.html">
+			MiM 
+			</a>
+			<a href="index.html">
+				<img src="figures/MiM.jpg" alt="MiM Logo" class="thmnail"></img>
+			</a>
+		</h1>
+</div>
+
+<div class="topmenu1">
+<ul id="fxmen" style="margin: 0px">
+  <li id="idhm"><a href="index.html">Home</a></li>
+  <li id="idac"><a href="next.html">Next Talk</a></li>
+  <li id="idex"><a href="upcoming.html">Upcoming Talks</a></li>
+  <li id="idsv"><a href="past.html">Past Talks</a></li>
+  <li id="idab"><a href="about.html">About Host</a></li>
+  <li id="idct"><a href="contacts.html">Contact</a></li>
+</ul>
+</div>
+
+<div class="topmenu2">
+<p id="m2" style="margin: 0px">  Detailed information for the next webinar </p>
+</div> 
+
+</div>
+
+
+
+
+
+<div class="center">
+
+
+<div>
+<h2> Next Talk: 7/June/2021, 4-5:30pm CET  
+</h2>
+<h3>
+<p id="countdown"></p>
+</h3>
+<p id="para" style=" text-align: justify">
+<b>Link:</b> https://tuwien.zoom.us/j/99550868573
+<br>
+4pm Central European time is (usually) 7am Pacific time and 10pm Beijing time
+</p>
+
+
+
+
+
+
+<h1> UPMEM DPU, architecture of the first commercially available PIM system</h1>           
+<h2> Fabrice Devaux, UPmem </h2>
+
+
+<h3> Abstract </h3>
+<p id="para" style=" text-align: justify">
+<img src="figures/FabriceDevaux.png" alt="Fabrice Devaux" style="float:right; width:200px; margin: 10px 10px 15px 15px;"></img>
+In this talk, we will present UPMEM PIM-DRAM, a disruptive, efficient, and scalable Processing In-Memory engine that will significantly contribute to this progress, covering most needs for upcoming digital intelligence and service, 
+unleashing the horizon and impact of application developers. We will have a look into the architecture of UPMEM DPU, its supported programming paradigms and spme examples of application benefiting from UPMEM DPU and their achieved speed-up.
+We then delve deeper into different aspects of logic on DRAM and close by presenting a perspective on what is likely and feasible to implement on DRAM (and what is not!), as well as the challenges of integrating a PIM memory into a legacy system.
+
+
+</p>
+
+<h3> Biography </h3>
+<p id="para" style=" text-align: justify">
+
+Fabrice Devaux is the CTO and a co-founder of UPMEM, a fabless semiconductor company based in Grenoble, France. UPMEM is a leading company in Processor-in-Memory technologies. Before co-founding UPMEM in 2015 (based on a project that began
+in 2013), he was in Trango Virtual Processor, an embedded Hupervisor company that he founded in 2003 and sold to VMWARE in 2008. From 1993-2003 he worked as an ASIC designer, micro-architect, and architect at various companies. 
+
+For more information, please see his webpage at http://www.upmem.com .</b> 
+</p>
+
+</div>
+
+
+
+
+<div class="center">
+<h1> <br> Panelists </h1> 
+
+
+<div class="center" style="float:left; max-width: 450px; margin: 15px;">
+<h2> Dr. Juan Gómez-Luna </h2>
+<h3> ETH Zurich </h3>
+<p id="para" style=" text-align: justify">
+<img src="figures/JuanGomezLuna.jpeg" alt="Juan Gómez-Luna" style="float:right; width:110px; margin: 10px 10px 15px 15px;"></img>
+Juan Gómez-Luna is a senior researcher and lecturer at SAFARI Research Group @ ETH Zürich. He received the BS and MS degrees in Telecommunication Engineering from the University of Sevilla, Spain, in 2001, 
+and the PhD degree in Computer Science from the University of Córdoba, Spain, in 2012. Between 2005 and 2017, he was a faculty member of the University of Córdoba. His research interests focus on processing-in-memory, 
+memory systems, heterogeneous computing, and hardware and software acceleration of medical imaging and bioinformatics. He is the lead author of PrIM, the first publicly-available benchmark suite for a real-world processing-in-memory architecture. 
+For more information, please see his webpage at https://safari.ethz.ch or https://ee.ethz.ch/the-department/people-a-z/person-detail.MjQxMjgy.TGlzdC8zMjc5LC0xNjUwNTg5ODIw.html .</b> 
+</p>
+</div>
+
+
+<div class="center" style="float:left; max-width: 450px; margin: 15px;">
+<h2> Dr. Izzat El Hajj </h2>
+<h3> American University of Beirut</h3>
+
+<p id="para" style=" text-align: justify">
+<img src="https://ielhajj.github.io/photo.jpg" alt="Izzat El Hajj" style="float:right; width:110px; margin: 10px 10px 15px 15px;"></img>
+Izzat El Hajj is an Assistant Professor in the Department of Computer Science at the American University of Beirut. He received his M.S. and Ph.D. in Electrical and Computer Engineering at the University of Illinois at Urbana-Champaign in 2018. 
+Prior to that, he received his B.E. in Electrical and Computer Engineering at the American University of Beirut in 2011. His research interests are in application acceleration and programming support for emerging accelerators and memories, 
+with a particular interest in GPUs and processing-in-memory. Most recently, he developed the compiler for PUMA and PANTHER, which are memristor-based processing-in-memory accelerators for machine learning, and 
+he also participated in the development of PrIM, a benchmark suite for general purpose processing-in-memory architectures. 
+For more information, please see his webpage at  http://ielhajj.github.io.</b> 
+</p>
+</div>
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="nima taherinejad" />
+		<meta name="copyright" content="nima taherinejad" />
+		<title> MiM Webinars </title>
+		
+		
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+		<style>
+		</style>
+		
+		
+		<script src="m1.js">
+		</script>
+		
+		<header>
+		</header>
+	</head>
+
+<body onload="men2('next')">
+
+
+<script>
+
+
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+var target = new Date("July 5, 2021 14:00:00Z");
+var targetmn = target.getUTCMonth();
+var targetd = target.getUTCDate();
+var targeth = target.getUTCHours();
+var targetm = target.getUTCMinutes();
+var targets = target.getUTCSeconds();
+var targetInS = (((targetmn*31+targetd)*24+targeth)*60+targetm)*60+targets;
+
+// Set the date we're counting down to
+//  var countDownDate = Date.UTC(2021,5,12,18,1);
+  // Get today's date and time
+  var now = new Date();
+  var nowmn = now.getUTCMonth();
+  var nowd = now.getUTCDate();
+  var nowh = now.getUTCHours();
+  var nowm = now.getUTCMinutes();
+  var nows = now.getUTCSeconds();
+  var nowInS = (((nowmn*31+nowd)*24+nowh)*60+nowm)*60+nows;
+  var nowOffset = now.getTimezoneOffset();
+  // Find the distance between now and the count down date
+  var distance = 1000 *(targetInS - nowInS) ;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="countdown"
+  document.getElementById("countdown").innerHTML = "Webinar starting in " + days + " days " + hours + " hours "
+  + minutes + " minutes " + seconds + " seconds "  ;
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "Webinar in progress";
+  }
+  
+  if (distance < -5400000) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "Webinar ended";
+  }
+}, 1000);
+</script>
+
+
+
+<div class="center">
+
+<div class="topheader">
+		<h1 class="top"> 
+			<a href="index.html">
+			MiM 
+			</a>
+			<a href="index.html">
+				<img src="figures/MiM.jpg" alt="MiM Logo" class="thmnail"></img>
+			</a>
+		</h1>
+</div>
+
+<div class="topmenu1">
+<ul id="fxmen" style="margin: 0px">
+  <li id="idhm"><a href="index.html">Home</a></li>
+  <li id="idac"><a href="next.html">Next Talk</a></li>
+  <li id="idex"><a href="upcoming.html">Upcoming Talks</a></li>
+  <li id="idsv"><a href="past.html">Past Talks</a></li>
+  <li id="idab"><a href="about.html">About Host</a></li>
+  <li id="idct"><a href="contacts.html">Contact</a></li>
+</ul>
+</div>
+
+<div class="topmenu2">
+<p id="m2" style="margin: 0px">  Detailed information for the next webinar </p>
+</div> 
+
+</div>
+
+
+
+
+
+<div class="center">
+
+
+<div>
+<h2> Next Talk: 5/July/2021, 4-5:30pm CET  
+</h2>
+<h3>
+<p id="countdown"></p>
+</h3>
+<p id="para" style=" text-align: justify">
+<b>Link:</b>   https://tuwien.zoom.us/j/99550868573
+<br>
+4pm Central European time is (usually) 7am Pacific time and 10pm Beijing time
+</p>
+
+
+
+
+
+
+<h1> In-Memory Computing with Imperfect or Unreliable Memory Devices</h1>           
+<h2> Dr. Damien Querlioz,Université Paris-Saclay </h2>
+
+
+<h3> Abstract </h3>
+<p id="para" style=" text-align: justify">
+The emergence of novel memories, such as memristors or resistive memory (RRAM), opens the way to highly energy-efficient computation, near- or in-memory. However, this type of computation has to deal with the severe unreliability of these new memories. Conventionally, the industry uses formal error correction codes (ECC) to eliminate the errors of imperfect devices. However, using ECC would ruin most of the benefits of in-memory computation.  In this talk, I will present several approaches to compute in-memory with unreliable devices and without ECC, going from relatively conventional approaches to radical ideas exploiting device imperfections. First, I will present a manufactured differential CMOS/RRAM memory architecture, inspired by the architecture of animal brains, and suitable for neural network implementation without formal ECC. Measurements on this array highlight that using highly error-prone programming conditions may only slightly reduce network accuracy while bringing important benefits in terms of energy efficiency. Second, I will present an approach where the variability of memristors, instead of being mitigated, can be fully exploited to implement a type of probabilistic learning. The inherent variability of memristors can naturally implement the sampling step in the Metropolis-Hastings Markov Chain Monte Carlo algorithm. We have, for example, trained an array of 16,384 memristors experimentally to recognize images of cancerous tissues using this technique. These results highlight the interest in fully embracing the unreliable nature of emerging devices in neuromorphic designs.
+</p>
+
+<h3> Biography </h3>
+<img src="figures/damien.jpg" alt="Damien Querlioz" style="float:right; width:200px; margin: 10px 10px 15px 15px;"></img>
+<p id="para" style=" text-align: justify">
+Damien Querlioz is a CNRS Researcher at the Centre de Nanosciences et de Nanotechnologies of Université Paris-Saclay. His research focuses on novel usages of emerging non-volatile memory and other nanodevices, in particular relying on inspirations from biology and machine learning. He received his predoctoral education at Ecole Normale Supérieure, Paris and his PhD from Université Paris-Sud in 2009. Before his appointment at CNRS, he was a Postdoctoral Scholar at Stanford University and at the Commissariat a l'Energie Atomique. Damien Querlioz is the coordinator of the interdisciplinary INTEGNANO research group, with colleagues working on all aspects of nanodevice physics and technology, from materials to systems. He is a member of the bureau of the French Biocomp research network. He has co-authored one book, nine book chapters, more than 100 journal articles, and conference proceedings, and given more than 50 invited talks at national and international workshops and conferences. In 2016, he was the recipient of an ERC Starting Grant to develop the concept of natively intelligent memory. In 2017, he received the CNRS Bronze medal. He has also been a co-recipient of the 2017 IEEE Guillemin-Cauer Best Paper Award and of the 2018 IEEE Biomedical Circuits and Systems Best Paper Award.
+<br>For more information, please see his webpages at http://sites.google.com/site/damienquerlioz/
+ or 
+http://integnano.c2n.universite-paris-saclay.fr/ 
+</p>
+
+</div>
+
+
+
+
+<div class="center">
+<h1> <br> Panelists </h1> 
+
+<div class="center" style="float:left; max-width: 450px; margin: 15px;">
+<h2> Dr. Stephan Menzel</h2>
+<h3> Forschungszentrum Juelich </h3>
+<p id="para" style=" text-align: justify">
+<img src="figures/s_menzel.jpg" alt="Stephan Menzel" style="float:right; width:110px; margin: 10px 10px 15px 15px;"></img>
+Stephan Menzel received his PhD degree (summa cum laude) from the RWTH Aachen University in 2012. Since 2012, he has been at the Peter Grünberg Institut (PGI-7) at Forschungszentrum Juelich GmbH as senior scienticst. He is now the head of the simulation group at the PGI-7, Forschungszentrum Juelich. His group developed simulation tools for resistive switching devices which are commonly available (www.emrl.de/Jart.html). He is associate editor of Scientific Reports (2015-), editor of MDPI Materials (2020-), editor of IEEE Journal of the Electron Device Society (2020-), and Frontiers in Neuroscience (2021-). He is member of the IEEE since 2012 and member of the EDS and CAS society. 
+<br>
+His research interests include the physics, characterization, modeling, and simulation of resistive switching (memristive) devices and computing-in-memory and neuromorphic computing circuits exploiting memristive devices. Stephan Menzel co-authored overall more than 100 papers counting more than 2,500 citations, 8 book chapters and gave 25 invited talks.
+
+For more information, please see his webpage at http://www.emrl.de/JART.html 
+</p>
+</div>
+
+
+<div class="center" style="float:left; max-width: 450px; margin: 15px;">
+<h2> Dr. Patrick Sheridan </h2>
+<h3> Micron Advanced Memory Systems</h3>
+
+<p id="para" style=" text-align: justify">
+<img src="figures/p_sheridan.jpg" alt="Patrick Sheridan" style="float:right; width:110px; margin: 10px 10px 15px 15px;"></img>
+
+Patrick Sheridan received his Ph.D. and M.S. degrees in Electrical Engineering from the University of Michigan in 2015 and 2012, respectively, and earned B.S. degrees in Computer Engineering and Mathematics from Virginia Polytechnic and State University in 2009.  Dr. Sheridan is currently a research scientist in the Micron Advanced Memory Systems Near Data Computing group and works from Boulder, CO. His research focuses on memory systems architecture and modeling and he maintains interests in non-von Neumann architectures and neuromorphic computing.
+For more information, please see his webpage at http://linkedin.com/in/sheridp
+
+</p>
+</div>
+
+
+
+
+
+
+
+<!--
+<div class="center" style="float:left; max-width: 450px; margin: 15px;">
+<h2> Dr. Akhilesh Jaiswal </h2>
+<h3> Univeristy of Southern California</h3>
+<!--
+<p id="para" style=" text-align: justify">
+<img src="https://dfan.engineering.asu.edu/wp-content/uploads/2019/09/deliang-portrait-2_meitu_1.jpg" alt="Deliang Fan" style="float:right; width:110px; margin: 10px 10px 15px 15px;"></img>
+Deliang Fan is currently an assistant professor in the School of Electrical, Computer and Energy Engineering at Arizona State University. Before joining ASU in 2019, he was an assistant professor in Department of Electrical and Computer Engineering at University of Central Florida, Orlando, Florida. He received his master's degree and doctoral degree under the supervision of Prof. Kaushik Roy, in electrical and computer engineering from Purdue University, West Lafayette, Indiana in 2012 and 2015, respectively. For more information,
+please see his webpage at https://dfan.engineering.asu.edu/ .</b> 
+</p>
+-->
+</div>
+
+
+</div>
+
+</div>
+
+
+</body>
+
+</html>

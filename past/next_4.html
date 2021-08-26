@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="nima taherinejad" />
+		<meta name="copyright" content="nima taherinejad" />
+		<title> MiM Webinars </title>
+		
+		
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+		<style>
+		</style>
+		
+		
+		<script src="m1.js">
+		</script>
+		
+		<header>
+		</header>
+	</head>
+
+<body onload="men2('next')">
+
+
+<script>
+
+
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+var target = new Date("June 21, 2021 14:00:00Z");
+var targetmn = target.getUTCMonth();
+var targetd = target.getUTCDate();
+var targeth = target.getUTCHours();
+var targetm = target.getUTCMinutes();
+var targets = target.getUTCSeconds();
+var targetInS = (((targetmn*31+targetd)*24+targeth)*60+targetm)*60+targets;
+
+// Set the date we're counting down to
+//  var countDownDate = Date.UTC(2021,5,12,18,1);
+  // Get today's date and time
+  var now = new Date();
+  var nowmn = now.getUTCMonth();
+  var nowd = now.getUTCDate();
+  var nowh = now.getUTCHours();
+  var nowm = now.getUTCMinutes();
+  var nows = now.getUTCSeconds();
+  var nowInS = (((nowmn*31+nowd)*24+nowh)*60+nowm)*60+nows;
+  var nowOffset = now.getTimezoneOffset();
+  // Find the distance between now and the count down date
+  var distance = 1000 *(targetInS - nowInS) ;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="countdown"
+  document.getElementById("countdown").innerHTML = "Webinar starting in " + days + " days " + hours + " hours "
+  + minutes + " minutes " + seconds + " seconds "  ;
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "Webinar in progress";
+  }
+  
+  if (distance < -5400000) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "Webinar ended";
+  }
+}, 1000);
+</script>
+
+
+
+<div class="center">
+
+<div class="topheader">
+		<h1 class="top"> 
+			<a href="index.html">
+			MiM 
+			</a>
+			<a href="index.html">
+				<img src="figures/MiM.jpg" alt="MiM Logo" class="thmnail"></img>
+			</a>
+		</h1>
+</div>
+
+<div class="topmenu1">
+<ul id="fxmen" style="margin: 0px">
+  <li id="idhm"><a href="index.html">Home</a></li>
+  <li id="idac"><a href="next.html">Next Talk</a></li>
+  <li id="idex"><a href="upcoming.html">Upcoming Talks</a></li>
+  <li id="idsv"><a href="past.html">Past Talks</a></li>
+  <li id="idab"><a href="about.html">About Host</a></li>
+  <li id="idct"><a href="contacts.html">Contact</a></li>
+</ul>
+</div>
+
+<div class="topmenu2">
+<p id="m2" style="margin: 0px">  Detailed information for the next webinar </p>
+</div> 
+
+</div>
+
+
+
+
+
+<div class="center">
+
+
+<div>
+<h2> Next Talk: 21/June/2021, 4-5:30pm CET  
+</h2>
+<h3>
+<p id="countdown"></p>
+</h3>
+<p id="para" style=" text-align: justify">
+<b>Link:</b>  https://tuwien.zoom.us/j/95707379792
+<br>
+4pm Central European time is (usually) 7am Pacific time and 10pm Beijing time
+</p>
+
+
+
+
+
+
+<h1> Deep learning acceleration: A killer application for in-memory computing?</h1>           
+<h2> Dr. Abu Sebastian, IBM </h2>
+
+
+<h3> Abstract </h3>
+<p id="para" style=" text-align: justify">
+<img src="figures/Abu_IEEE.png" alt="Abu Sebastian" style="float:right; width:200px; margin: 10px 10px 15px 15px;"></img>
+The rise of AI and in particular, deep learning (DL), is a key driver for innovations in computing systems. There is a significant effort towards the design of custom ASICs based on reduced precision arithmetic and highly optimized dataflow. However, the need to shuttle millions of synaptic weight values between the memory and processing units, remains unaddressed. In-memory computing (IMC) is an emerging computing paradigm that addresses this challenge of processor-memory dichotomy. Attributes such as synaptic efficacy and plasticity can be implemented in place by exploiting the physical attributes of memory devices such as phase-change memory (PCM). In this talk, I will give a status update on where in-memory computing stands with respect to DL acceleration. How do we tackle imprecision arising from noisy, analog computing? I will present some recent algorithmic as well as device-level innovations. I will also touch upon some system-level aspects and will present a world’s first IMC compute core based on PCM fabricated in 14nm CMOS technology. Finally, I will provide a brief overview of photonic in-memory computing that could facilitate unprecedented latency and compute density.
+
+</p>
+
+<h3> Biography </h3>
+<p id="para" style=" text-align: justify">
+Abu Sebastian is a Distinguished Research Staff Member at IBM Research – Zurich. He was a contributor to several key projects in the space of storage and memory technologies and currently leads the research effort on in-memory computing at IBM Zurich. Dr. Sebastian is a co-recipient of the 2009 IEEE Control Systems Technology Award and the 2009 IEEE Transactions on Control Systems Technology Outstanding Paper Award. In 2015 he was awarded the European Research Council (ERC) consolidator grant and in 2020, he was awarded an ERC Proof-of-concept grant. He is an IBM Master Inventor since 2016. He was named Principal and Distinguished Research Staff Member in 2018 and 2020, respectively. In 2019, he received the Ovshinsky Lectureship Award for his contributions to "Phase-change materials for cognitive computing".
+<br>For more information, please see his webpage at http://researcher.ibm.com/person/zurich-ASE or contact him via ase@zurich.ibm.com
+</p>
+
+</div>
+
+
+
+
+<div class="center">
+<h1> <br> Panelists </h1> 
+
+
+<div class="center" style="float:left; max-width: 450px; margin: 15px;">
+<h2> Dr. Adnan Mehonic </h2>
+<h3> University College London </h3>
+<p id="para" style=" text-align: justify">
+<img src="figures/a_mehonic.jpg" alt="Adnan Mehonic" style="float:right; width:110px; margin: 10px 10px 15px 15px;"></img>
+Adnan Mehonic is currently working on the development of energy-efficient computing systems based on memristors. 
+He is interested in non-von Neumann computing paradigms where the physics of memristive devices is harnessed to perform both memory and computing. 
+Dr. Mehonic os looking for ways to increase on-device processing by developing application-specific systems with the holistic approach (materials->devices->circuits->algorithms->applications) 
+and considering non-conventional methods for information processing (e.g. spike-based computing).
+
+To date, he has authored more than 100 journal publications and international conference proceedings (including more than ten invited talks). 
+He is the inventor of 10 resistance-switching patents and co-funder of a spinout company (“IntrinSic Semiconductor Technology”), where I serve as a Chief Technology Officer. 
+I received the “One to Watch 2015” award from UCL Enterprise for UCL’s most innovative staff.
+For more information, please see his webpage at https://www.ucl.ac.uk/iccs/dr-adnan-mehonic. 
+</p>
+</div>
+
+
+<div class="center" style="float:left; max-width: 450px; margin: 15px;">
+<h2> Dr. Shahar Kvatinsky </h2>
+<h3> Technion - Israel Institute of Technology</h3>
+
+<p id="para" style=" text-align: justify">
+<img src="figures/s_kvatinsky.jpg" alt="Shahar Kvatinsky" style="float:right; width:110px; margin: 10px 10px 15px 15px;"></img>
+Shahar Kvatinsky is an Associate Professor at the Andrew and Erna Viterbi Faculty of Electrical and Computer Engineering, Technion – Israel Institute of Technology. 
+Shahar received the B.Sc. degree in Computer Engineering and Applied Physics and an MBA degree in 2009 and 2010, respectively, both from the Hebrew University of Jerusalem, 
+and the Ph.D. degree in Electrical Engineering from the Technion – Israel Institute of Technology in 2014. From 2006 to 2009, he worked as a circuit designer at Intel. 
+From 2014 and 2015, he was a post-doctoral research fellow at Stanford University. Kvatinsky is a member of the Israel Young Academy. He is the head of the Advanced Circuits Research Center at the Technion, 
+chair of the IEEE Circuits and Systems in Israel, and an editor of Microelectronics Journal and Array. 
+Kvatinsky has been the recipient of numerous awards: 2020 MDPI Electronics Young Investigator Award, 2019 Wolf Foundation's Krill Prize for Excellence in Scientific Research, 
+2015 IEEE Guillemin-Cauer Best Paper Award, 2015 Best Paper of Computer Architecture Letters, Viterbi Fellowship, Jacobs Fellowship, ERC starting grant, the 2017 Pazy Memorial Award, 
+the 2014, 2017 and 2021 Hershel Rich Technion Innovation Awards, 2013 Sanford Kaplan Prize for Creative Management in High Tech, 2010 Benin prize, and seven Technion excellence teaching awards. 
+His current research is focused on circuits and architectures with emerging memory technologies and design of energy efficient architectures.
+For more information, please see his webpage at http://asic2.group
+
+</p>
+</div>
+
+
+<!--
+<div class="center" style="float:left; max-width: 450px; margin: 15px;">
+<h2> Dr. Akhilesh Jaiswal </h2>
+<h3> Univeristy of Southern California</h3>
+<!--
+<p id="para" style=" text-align: justify">
+<img src="https://dfan.engineering.asu.edu/wp-content/uploads/2019/09/deliang-portrait-2_meitu_1.jpg" alt="Deliang Fan" style="float:right; width:110px; margin: 10px 10px 15px 15px;"></img>
+Deliang Fan is currently an assistant professor in the School of Electrical, Computer and Energy Engineering at Arizona State University. Before joining ASU in 2019, he was an assistant professor in Department of Electrical and Computer Engineering at University of Central Florida, Orlando, Florida. He received his master's degree and doctoral degree under the supervision of Prof. Kaushik Roy, in electrical and computer engineering from Purdue University, West Lafayette, Indiana in 2012 and 2015, respectively. For more information,
+please see his webpage at https://dfan.engineering.asu.edu/ .</b> 
+</p>
+-->
+</div>
+
+
+</div>
+
+</div>
+
+
+</body>
+
+</html>

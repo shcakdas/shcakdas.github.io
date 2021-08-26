@@ -1,0 +1,209 @@
+			body		{
+					background-color: #F6F6F6;
+					text-align:left;
+					max-width:1234px;
+					}
+			h1.top		
+					{
+					text-align: right;
+					vertical-align: bottom;
+					font-size: 16px;
+					font-family: helvetica, arial, sans-serif;
+					-webkit-font-smoothing: antialiased;
+					text-shadow: 0 -1px rgba(0, 0, 0, .5);
+					margin: 0px;
+					<!--color:white;
+					line-height: 40px;
+					<--padding: 14px;					-->
+					}
+			h1.top 
+				a:link
+						{
+						color:white; 
+						background-color:transparent; 
+						text-decoration: none ;
+						}			
+			h1.top 
+				a:visited
+						{
+						color:white; 
+						background-color:transparent; 
+						text-decoration: none ;
+						}
+			p.s0	{
+					font-size:70%;
+					color:blue;
+					}
+						
+			div.topheader
+						{
+						
+						background-color: #2952A3;
+						color: white;
+						padding: 3px;
+						<!-- margin: 0px; text-align: right;
+						vertical-align: bottom;
+						line-height: 40px;
+						font-size: 60%;	-->				
+
+						}
+			img.thmnail
+						{
+						float: right;
+						height: 38px;
+						border: 1px;\
+						border-color: darkblue;
+						margin: 0 1px 0 11px;
+						border-radius: 4px 4px 4px 4px;
+						}
+			nav 	
+					{
+					line-height:30px;
+					background-color:#545454;
+					height:300px;
+					width:100px;
+					float:left;
+					padding:5px;	
+					color: white;
+					margin: 0px 15px 15px 0px;
+					}
+			iframe.mainp
+						{
+						width: 100%;
+						margin: 10px 20px 10px 10px;
+						height: 100%;
+						}
+			div.topmenu1
+						{
+						text-align: center;
+						background-color: #5475B5; 
+						color: white;
+						padding: 1px;
+						margin: 0px;
+						}
+			div.topmenu2
+						{
+						text-align: center;
+						color: darkblue;
+						background-color: #94A8D1; 
+						padding: 4px;
+						}						
+			div.topmenu2
+						ul li 
+						{
+						display: inline;
+						text-align: left;
+						}
+			div.topmenu2 
+						ul li a
+						{
+					    background-color: transparent;
+						color: darkblue;
+						padding: 5px 14px;
+						text-decoration: none;
+						border-radius: 0px 0px 0px 0px;
+						}
+			div.topmenu2 
+						ul li a:hover{background-color:#F6F6F6}
+						
+			ul#tpmen1 li{
+						display: inline;
+						text-align: left;
+					    background: transparent;
+						color: white;
+						padding: 2px 12px;
+						text-decoration: none;
+						border-radius: 4px 4px 0px 0px;
+						}
+			ul#tpmen1 li:hover{background:#193162;
+						cursor:pointer;}
+						
+			.center {
+					margin: auto;
+					max-width: 1000px;
+					}
+					
+			.fixed_center_header {
+					margin: auto;
+					width: 80%;
+					position: fixed;
+					z-index:300;
+					}					
+					
+			.half_frame
+					{
+						 max-width: 465px; 
+						 margin: 15px 15px 15px 15px;
+					}
+					
+			ul#fxmen li {
+						display: inline;
+						text-align: left;
+						padding: 2px;
+						text-decoration: none;
+						border-radius: 4px 4px 0px 0px;
+						}
+			ul#fxmen li a
+						{
+					    background-color: transparent;
+						color: white;
+						padding: 2px 12px;
+						text-decoration: none;
+						border-radius: 4px 4px 0px 0px;
+						}
+			ul#fxmen li a:hover{background-color:#193162;}
+			
+			p.collbutt
+				{
+						max-width: 75%;
+						background-color: #2952A3;
+						color: white;
+						text-align: left;
+						padding: 8px;
+						margin: 4px;
+						text-decoration: none;
+						border-radius: 4px 4px 4px 4px;
+				}
+			p.collbutt:hover
+					{
+						background:#193162;
+						cursor:pointer;
+					}
+			
+
+			p.butt
+				{
+						max-width: 75%;
+						background-color: #2952A3;
+						color: white;
+						text-align: left;
+						padding: 8px;
+						margin: 4px;
+						text-decoration: none;
+						border-radius: 4px 4px 4px 4px;
+				}
+				
+				<style>
+#tbl {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#tbl td, #tbl th {
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+#tbl tr:nth-child(even){background-color:#e3e1e1;}
+
+#tbl tr:hover {background-color: #94A8D1;}
+
+#tbl th {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: left;
+  background-color: #2952A3;
+  color: white;
+}
+

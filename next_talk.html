@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+<head>
+  <title>MIM</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="HTML5 website template">
+  <meta name="keywords" content="mim, webinar, in, memory, computing">
+  <meta name="author" content="Serhat Hakan Can Akdas">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <style>
+    .button {
+    background-image:url("assets/img/MiM_w.png");
+    background-size: cover; 
+    border: #092436;
+    opacity: 100;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 15cm;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    }
+    .button:hover {
+    background-color: #ffffff;
+    color: rgb(44, 44, 44);
+    box-shadow: 0 8px 16px 0 rgba(167, 167, 167, 0.747), 0 6px 20px 0 rrgba(167, 167, 167, 0.747)
+    }
+  
+    .button:active {
+    background-color: darkblue;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+   }
+  </style>
+</head>
+<body>
+
+<!-- notification for small viewports and landscape oriented smartphones -->
+<div class="device-notification">
+  <a class="device-notification--logo" href="#0">
+    <img style="border-radius: 8px;" src="assets/img/MiM_w.png" alt="MIM">
+    <p>MIM</p>
+  </a>
+  <p class="device-notification--message">MIM has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
+</div>
+<div class="perspective effect-rotate-left">
+  <div class="container"><div class="outer-nav--return"></div>
+    <div id="viewport" class="l-viewport">
+      <div class="l-wrapper">
+        <header class="header">
+          <a class="header--logo" href="mim_webinar.html">
+            <img src="assets/img/MiM_w.png" alt="MIM" style="width:48.5px;height:26.5px; border-radius: 5px;">
+            <p>MIM</p>
+          </a>
+          <div class="header--nav-toggle">
+            <span></span>
+          </div>
+        </header>
+        <p> <br> <br> <br> Detailed information about our next talk </p>
+        <button class="button" onclick="location.href='mim_webinar.html'" type="button">
+          `' '´</button>
+        <div class="intro">
+          <div class="intro--banner">
+            <h1>Mondays<br>in<br>Memory</h1>
+            <img src="figures/VonNeumannBottleneck.jpg" alt="VonNeumannBottleneck" >
+            <br><br>
+          </div>
+        </div>          
+      </div>
+    </div>  
+  </div>    
+</div>
+<div>
+  <h2 style="text-align: justify; margin-left: 50px;"> Next Talk: 2/August/2021, 4-5:30pm CET  
+  </h2>
+  <h3 style="text-align: justify; margin-left: 50px;">
+  <p id="countdown"></p>
+  </h3>
+  <p id="para" style="text-align: justify; margin-left: 50px;">
+  <b>Link:</b>   To be posted
+  <br>
+  4pm Central European time is (usually) 7am Pacific time and 10pm Beijing time
+  <br> <br>
+  </p>
+</div>
+                <h1 style="margin-left: 2cm;"> Mythic's Flash-based Analog Compute-in-Memory</h1>           
+                <h2 style="margin-left: 2cm;"> Dr. Dave Fick, CTO of Mythic</h2>
+                
+                
+                <h3 style="margin-left: 2cm;"> Abstract </h3>
+                <img src="figures/david_fick.jpg" alt="Dave Fick" style="float:right; width:200px; margin: 10px 10px 15px 15px;"></img>
+                <p id="para" style=" text-align: justify; margin-left: 2cm;">
+                AI and many other applications have opportunities to build systems that merge memory and computing into a unified structure in ways that yields significant improvements in energy efficiency, performance, and cost. In these scenarios, "moving the compute to the memory" makes sense because the applications have large amounts of data to process and relatively simple operations to perform, which makes it not too difficult to create specialized processing near the memory when traditionally moving the data to the main system processor would be slow and inefficient. These approaches have a wide variety of applications as well as approaches. On one end of the spectrum, systems that have processing inside of an SSD to perform searches inside the drive itself, and on the other end of the spectrum, systems that have analog compute performing mathematics directly on the bitlines of the memory arrays. In this talk, we will provide an overview of many of these approaches as well as the methods to their madness.</p>
+                
+                <h3 style="margin-left: 2cm;"> Biography </h3>
+                
+                <p id="para" style=" text-align: justify; margin-left: 2cm;">
+                Dave Fick co-founded Mythic with Mike Henry in 2012, a company building next-generation intelligence processing units (IPUs) for edge and cloud inference. Mythic has raised $165M of venture capital to combine analog computing, dataflow architecture, and compute-in-memory to provide the best combination of performance and energy efficiency available. Dave received his Ph.D. from the University of Michigan under David Blaauw and Dennis Sylvester at the Michigan Integrated Circuits Lab.
+                <br>For more information, please see his webpages at <a href="http://davefick.com">http://davefick.com</a> 
+                 or 
+                <a href="https://www.mythic-ai.com/">https://www.mythic-ai.com/</a> .
+                </p>
+                
+                </div>
+                
+                
+                
+                
+                <div class="center">
+                <h1 style="margin-left: 15cm;"> <br> Panelists </h1> 
+                
+                <div class="center" style="float:left; max-width: 450px; margin-left: 3cm;">
+                <h2> Dr. Stephan Menzel</h2>
+                <h3> Forschungszentrum Juelich </h3>
+                <p id="para" style=" text-align: justify">
+                <img src="figures/s_menzel.jpg" alt="Stephan Menzel" style="float:right; width:110px; margin: 10px 10px 15px 15px;"></img>
+                Stephan Menzel received his PhD degree (summa cum laude) from the RWTH Aachen University in 2012. Since 2012, he has been at the Peter Grünberg Institut (PGI-7) at Forschungszentrum Juelich GmbH as senior scienticst. He is now the head of the simulation group at the PGI-7, Forschungszentrum Juelich. His group developed simulation tools for resistive switching devices which are commonly available (www.emrl.de/Jart.html). He is associate editor of Scientific Reports (2015-), editor of MDPI Materials (2020-), editor of IEEE Journal of the Electron Device Society (2020-), and Frontiers in Neuroscience (2021-). He is member of the IEEE since 2012 and member of the EDS and CAS society. 
+                <br>
+                His research interests include the physics, characterization, modeling, and simulation of resistive switching (memristive) devices and computing-in-memory and neuromorphic computing circuits exploiting memristive devices. Stephan Menzel co-authored overall more than 100 papers counting more than 2,500 citations, 8 book chapters and gave 25 invited talks.
+                
+                For more information, please see his webpage at <a href="http://www.emrl.de/JART.html">http://www.emrl.de/JART.html</a>
+                </p>
+                </div>
+                
+                
+                <div class="center" style="float:left; max-width: 450px; margin-left: 5cm;">
+                <p></p>  
+                <h2> Dr. Patrick Sheridan </h2>
+                <h3> Micron Advanced Memory Systems</h3>
+                
+                <p id="para" style=" text-align: justify">
+                <img src="figures/p_sheridan.jpg" alt="Patrick Sheridan" style="float:right; width:110px; margin: 10px 10px 15px 15px;"></img>
+                
+                Patrick Sheridan received his Ph.D. and M.S. degrees in Electrical Engineering from the University of Michigan in 2015 and 2012, respectively, and earned B.S. degrees in Computer Engineering and Mathematics from Virginia Polytechnic and State University in 2009.  Dr. Sheridan is currently a research scientist in the Micron Advanced Memory Systems Near Data Computing group and works from Boulder, CO. His research focuses on memory systems architecture and modeling and he maintains interests in non-von Neumann architectures and neuromorphic computing.
+                For more information, please see his webpage at <a href="http://linkedin.com/in/sheridp">http://linkedin.com/in/sheridp</a>
+                
+                </p>
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                
+                <div class="center" style="float:left; max-width: 450px;  margin-left: 5cm;">
+                <h2> Dr. Akhilesh Jaiswal </h2>
+                <h3> Univeristy of Southern California</h3>
+                
+                <p id="para" style=" text-align: justify">
+                <img src="https://dfan.engineering.asu.edu/wp-content/uploads/2019/09/deliang-portrait-2_meitu_1.jpg" alt="Deliang Fan" style="float:right; width:110px; margin: 10px 10px 15px 15px;"></img>
+                Deliang Fan is currently an assistant professor in the School of Electrical, Computer and Energy Engineering at Arizona State University. Before joining ASU in 2019, he was an assistant professor in Department of Electrical and Computer Engineering at University of Central Florida, Orlando, Florida. He received his master's degree and doctoral degree under the supervision of Prof. Kaushik Roy, in electrical and computer engineering from Purdue University, West Lafayette, Indiana in 2012 and 2015, respectively. For more information,
+                please see his webpage at <a href="https://dfan.engineering.asu.edu/">https://dfan.engineering.asu.edu/</a> .</b> 
+                </p>
+                
+                </div>
+                
+                
+                </div>
+                
+  <ul class="outer-nav">
+    <li class="is-active">Next Talk</li>
+  </ul>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+<script src="assets/js/functions-min.js"></script>
+</body>
+</html>

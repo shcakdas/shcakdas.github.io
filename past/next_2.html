@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="nima taherinejad" />
+		<meta name="copyright" content="nima taherinejad" />
+		<title> MiM Webinars </title>
+		
+		
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+		<style>
+		</style>
+		
+		
+		<script src="m1.js">
+		</script>
+		
+		<header>
+		</header>
+	</head>
+
+<body onload="men2('next')">
+
+
+<script>
+
+
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+var target = new Date("May 12, 2021 19:35:00Z");
+var targetd = target.getUTCDate();
+var targeth = target.getUTCHours();
+var targetm = target.getUTCMinutes();
+var targets = target.getUTCSeconds();
+var targetInS = ((targetd*24+targeth)*60+targetm)*60+targets;
+
+// Set the date we're counting down to
+  var countDownDate = Date.UTC(2021,5,12,18,1);
+  // Get today's date and time
+  var now = new Date();
+  var nowd = now.getUTCDate();
+  var nowh = now.getUTCHours();
+  var nowm = now.getUTCMinutes();
+  var nows = now.getUTCSeconds();
+  var nowInS = ((nowd*24+nowh)*60+nowm)*60+nows;
+  // Find the distance between now and the count down date
+  var distance = 1000 *(targetInS - nowInS) ;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="countdown"
+  document.getElementById("countdown").innerHTML = "Local Time: " + now + "<br> Webinar starting in " + days + " days " + hours + " hours "
+  + minutes + " minutes " + seconds + " seconds " + targetInS + " - " + nowInS ;
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "Webinar in progress";
+  }
+  
+  if (distance < -5400000) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "Webinar ended";
+  }
+}, 1000);
+</script>
+
+
+
+<div class="center">
+
+<div class="topheader">
+		<h1 class="top"> 
+			<a href="index.html">
+			MiM 
+			</a>
+			<a href="index.html">
+				<img src="figures/MiM.jpg" alt="MiM Logo" class="thmnail"></img>
+			</a>
+		</h1>
+</div>
+
+<div class="topmenu1">
+<ul id="fxmen" style="margin: 0px">
+  <li id="idhm"><a href="index.html">Home</a></li>
+  <li id="idac"><a href="next.html">Next Talk</a></li>
+  <li id="idex"><a href="upcoming.html">Upcoming Talks</a></li>
+  <li id="idsv"><a href="past.html">Past Talks</a></li>
+  <li id="idab"><a href="about.html">About Host</a></li>
+  <li id="idct"><a href="contacts.html">Contact</a></li>
+</ul>
+</div>
+
+<div class="topmenu2">
+<p id="m2" style="margin: 0px">  Detailed information for the next webinar </p>
+</div> 
+
+</div>
+
+
+
+
+
+<div class="center">
+
+
+<div>
+<h2> Next Talk: 17/May/2021, 4-5:30pm CET  
+</h2>
+<h3>
+<p id="countdown"></p>
+</h3>
+<p id="para" style=" text-align: justify">
+<b>Link:</b>  https://tuwien.zoom.us/j/95707379792
+<br>
+4pm Central European time is (usually) 7am Pacific time and 10pm Beijing time
+</p>
+
+
+
+
+
+
+<h1> Memristor-based computation-in-memory for edge AI: Opportunities and Challenges</h1>           
+<h2> Professor Said Hamdioui, Delft Univeristy of Technology </h2>
+
+
+<h3> Abstract </h3>
+<p id="para" style=" text-align: justify">
+Evolving IoT applications are extremely demanding in terms of storage, energy efficiency as well as intelligence. Todays’ computer architectures fail to meet these requirements due to e.g., memory-processor data transfer bottleneck. Hence, alternative computing architectures are being explored in the light of emerging new device technologies. 
+
+This talk provides a broad overview of memristor based computation-in-memory (CIM) architectures, gives its potential in enabling smart local energy efficient computing, and highlights the major challenges ahead. The talk first briefly addresses the need of new computing paradigm with energy efficiency of order of fJ/operation to enable zillions of e.g., edge applications, and shows the limitations of both CMOS scaling and today’s computing architectures. Then it classifies the sate-of-the art computer architectures and highlight how the trends is going toward computation-in-memory (CIM) architectures in order to eliminated and/or significantly reduces the limitations of today’s technologies.  The concept of CIM based on memristor devices is discussed and logic and arithmetic circuit designs using such devices and how they enable such architectures are covered; data measurements are shown to demonstrate the CIM concept in silicon. The strong dependency of application domains on the selection of appropriate CIM architecture and its building blocks, as well as the huge potential of CIM (in realizing order of magnitude improvement in terms of energy efficiency) are illustrated based on some case studies. Future CIM challenges including architectures, design, test, and reliability are highlighted.  
+<img src="figures/s_hamdioui.jpg" alt="Said Hamdioui" style="float:right; width:200px; margin: 10px 10px 15px 15px;"></img>
+</p>
+
+<h3> Biography </h3>
+<p id="para" style=" text-align: justify">
+
+Hamdioui is currently Chair Professor on Dependable and Emerging Computer Technologies, Head of the Computer Engineering Laboratory (CE-Lab), and also serving as Head of the Quantum and Computer Engineering department of the Delft University of Technology, the Netherlands. He is also co-founder and CEO of Cognitive-IC, a start-up focusing on hardware dependability solutions. Hamdioui received the MSEE and PhD degrees (both with honors) from TUDelft. Prior to joining TUDelft as a professor, Hamdioui worked  at Intel Corporation (Califorina, USA), at Philips Semiconductors R&D (Crolles, France) and at Philips/ NXP Semiconductors (Nijmegen, The Netherlands). His research focuses on two domains: Dependable CMOS nano-computing (including Testability, Reliability, Hardware Security) and emerging technologies and computing paradigms (including memristors for logic and storage, in-memory-computing, neuromorphic computing, etc). 
+For more information,
+please see his webpage at http://ce.et.tudelft.nl/Hamdioui .</b> 
+</p>
+
+</div>
+
+
+
+
+<div class="center">
+<h1> <br> Panelists </h1> 
+
+
+<div class="center" style="float:left; max-width: 450px; margin: 15px;">
+<h2> Dr. Ioannis Vourkas </h2>
+<h3> Fed. TU Santa María </h3>
+<p id="para" style=" text-align: justify">
+<img src="figures/I.Vourkas_photo.jpg" alt="Ioannis Vourkas" style="float:right; width:110px; margin: 10px 10px 15px 15px;"></img>
+Dr. Ioannis Vourkas was born in Kozani, Greece, in 1985. He received his M. Eng. (Diploma) and Ph.D. degrees in Electrical and Computer Eng. (ECE) from the Democritus University of Thrace (DUTh), Greece, in 2008 and 2014, respectively. Currently he is Assistant Professor in the Department of Electronic Eng. of Universidad Técnica Federico Santa María (UTFSM) in Valparaíso, Chile. Ever since 2018, he has also been with the Advanced Center for Electrical and Electronic Eng. (AC3E) of UTFSM as an associate researcher. His current research emphasis is on novel computing circuits and architectures comprising memristors. His research is funded by the Chilean National Agency for Research and Development (ANID) and Synopsys R&D in Chile. 
+He is an IEEE CASS and NanoGiga TC member, and he has been with the Editorial Board of Elsevier Microelectronics Journal ever since 2017. He has been a scholar of the Greek BODOSSAKI Foundation (2011 to 2014) and of the Santander Universities Program (2018/2019).
+For more information, please see his webpage at http://ac3e.usm.cl/en/investigadores/ioannis-vourkas/ .</b> 
+</p>
+</div>
+
+<!--
+<div class="center" style="float:left; max-width: 450px; margin: 15px;">
+<h2> Dr. Christian Weis </h2>
+<h3> TU Kaiserslautern</h3>
+
+<p id="para" style=" text-align: justify">
+<img src="https://www.nipslab.org/wp-content/uploads/2019/04/weis.jpg" alt="Christian Weis" style="float:right; width:110px; margin: 10px 10px 15px 15px;"></img>
+He received the Ph.D. degree in electrical engineering from the TU Kaiserslautern, Germany, in 2014.
+From 1996 to 1998, he was with Mitsubishi Semiconductor Europe, Germany, where he was engaged in the design and development of microcontrollers. From 1998 to 2009, he was with Siemens Semiconductor, Infineon Technologies AG and Qimonda AG, Munich, Germany, in DRAM design. 
+Since 2009, he has been with the Microelectronic System Design Research Group, TU Kaiserslautern, Germany. He holds several patents related to DRAMs and DRAM design, and published more than 60 papers. 
+For more information, please see his webpage at http://ce.et.tudelft.nl/Hamdioui .</b> 
+</p>
+</div>
+
+
+
+<div class="center" style="float:left; max-width: 450px; margin: 15px;">
+<h2> Dr. Akhilesh Jaiswal </h2>
+<h3> Univeristy of Southern California</h3>
+<!--
+<p id="para" style=" text-align: justify">
+<img src="https://dfan.engineering.asu.edu/wp-content/uploads/2019/09/deliang-portrait-2_meitu_1.jpg" alt="Deliang Fan" style="float:right; width:110px; margin: 10px 10px 15px 15px;"></img>
+Deliang Fan is currently an assistant professor in the School of Electrical, Computer and Energy Engineering at Arizona State University. Before joining ASU in 2019, he was an assistant professor in Department of Electrical and Computer Engineering at University of Central Florida, Orlando, Florida. He received his master's degree and doctoral degree under the supervision of Prof. Kaushik Roy, in electrical and computer engineering from Purdue University, West Lafayette, Indiana in 2012 and 2015, respectively. For more information,
+please see his webpage at https://dfan.engineering.asu.edu/ .</b> 
+</p>
+-->
+</div>
+
+
+</div>
+
+</div>
+
+
+</body>
+
+</html>

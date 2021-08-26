@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="nima taherinejad" />
+		<meta name="copyright" content="nima taherinejad" />
+		<title> MiM Webinars </title>
+		
+		
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+		<style>
+		</style>
+		
+		
+		<script src="m1.js">
+		</script>
+		
+		<header>
+		</header>
+	</head>
+
+<body onload="men2('next')">
+
+
+<script>
+
+
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+var target = new Date("July 19, 2021 14:00:00Z");
+var targetmn = target.getUTCMonth();
+var targetd = target.getUTCDate();
+var targeth = target.getUTCHours();
+var targetm = target.getUTCMinutes();
+var targets = target.getUTCSeconds();
+var targetInS = (((targetmn*31+targetd)*24+targeth)*60+targetm)*60+targets;
+
+// Set the date we're counting down to
+//  var countDownDate = Date.UTC(2021,5,12,18,1);
+  // Get today's date and time
+  var now = new Date();
+  var nowmn = now.getUTCMonth();
+  var nowd = now.getUTCDate();
+  var nowh = now.getUTCHours();
+  var nowm = now.getUTCMinutes();
+  var nows = now.getUTCSeconds();
+  var nowInS = (((nowmn*31+nowd)*24+nowh)*60+nowm)*60+nows;
+  var nowOffset = now.getTimezoneOffset();
+  // Find the distance between now and the count down date
+  var distance = 1000 *(targetInS - nowInS) ;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="countdown"
+  document.getElementById("countdown").innerHTML = "Webinar starting in " + days + " days " + hours + " hours "
+  + minutes + " minutes " + seconds + " seconds "  ;
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "Webinar in progress";
+  }
+  
+  if (distance < -5400000) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "Webinar ended";
+  }
+}, 1000);
+</script>
+
+
+
+<div class="center">
+
+<div class="topheader">
+		<h1 class="top"> 
+			<a href="index.html">
+			MiM 
+			</a>
+			<a href="index.html">
+				<img src="figures/MiM.jpg" alt="MiM Logo" class="thmnail"></img>
+			</a>
+		</h1>
+</div>
+
+<div class="topmenu1">
+<ul id="fxmen" style="margin: 0px">
+  <li id="idhm"><a href="index.html">Home</a></li>
+  <li id="idac"><a href="next.html">Next Talk</a></li>
+  <li id="idex"><a href="upcoming.html">Upcoming Talks</a></li>
+  <li id="idsv"><a href="past.html">Past Talks</a></li>
+  <li id="idab"><a href="about.html">About Host</a></li>
+  <li id="idct"><a href="contacts.html">Contact</a></li>
+</ul>
+</div>
+
+<div class="topmenu2">
+<p id="m2" style="margin: 0px">  Detailed information for the next webinar </p>
+</div> 
+
+</div>
+
+
+
+
+
+<div class="center">
+
+
+<div>
+<h2> Next Talk: 19/July/2021, 4-5:30pm CET  
+</h2>
+<h3>
+<p id="countdown"></p>
+</h3>
+<p id="para" style=" text-align: justify">
+<b>Link:</b>   https://tuwien.zoom.us/j/95707379792
+<br>
+4pm Central European time is (usually) 7am Pacific time and 10pm Beijing time
+</p>
+
+
+
+
+
+
+<h1> Computing using voltage-controlled stochasticity in MRAM</h1>           
+<h2> Dr. Pedram Khalili, Northwestern Univeristy </h2>
+
+
+<h3> Abstract </h3>
+<p id="para" style=" text-align: justify">
+The adoption of magnetoresistive random access memory (MRAM) by major semiconductor manufacturers not only presents the potential to replace existing embedded memory types (e.g., initially embedded Flash and eventually, embedded SRAM) with MRAM, but also provides an unprecedented opportunity to develop unconventional computing architectures that utilize the physics of these newly available MRAM devices (i.e., magnetic tunnel junctions, MTJs) within mainstream semiconductor manufacturing platforms.
+In this talk we will first discuss the challenges facing existing embedded spin-transfer torque (STT-) MRAM in terms of scaling to higher bit densities while achieving speed and endurance that make it competitive against SRAM. We will then discuss how voltage-controlled (as opposed to current-controlled) MRAM cells can potentially overcome these challenges, and present our recent results in the development of voltage-controlled MRAM (VCM) cells. 
+We then discuss how appropriately designed modified MRAM cells with low retention time can be used to fulfill unconventional roles within a computing system, notably as electrically controlled stochastic bitstream (SBS) generators. We then discuss the application of such MRAM-based SBS generators to true random number generation and to stochastic computing (SC), and present our recent results on the implementation of an SC-based artificial neural network using a series of stochastic MRAM cells [1].
+Finally, we extend some of the presented ideas to more exploratory MRAM materials based on antiferromagnets, which provide immunity to large external magnetic fields, eliminate bit-to-bit magnetic interactions, and provide significantly faster dynamics, which are expected to be beneficial for both high-speed memory and stochastic computing applications [2-4].
+<br>
+[1] Y. Shao et al., IEEE Magnetics Letters 12, 4501005 (2021) </br>
+[2] S. Arpaci et al., Nature Communications 12, 3828 (2021) <br>
+[3] J. Shi et al., Nature Electronics 3, 92 (2020) </br>
+[4] V. Lopez-Dominguez et al., Physical Review Applied 11, 024019 (2019)
+
+</p>
+
+<h3> Biography </h3>
+<img src="figures/pedram_k.jpg" alt="Pedram Khalili" style="float:right; width:200px; margin: 10px 10px 15px 15px;"></img>
+<p id="para" style=" text-align: justify">
+Pedram Khalili Amiri is Associate Professor of Electrical and Computer Engineering at Northwestern University, and Director of the Physical Electronics Research Laboratory (PERL). He is also a faculty member of the Applied Physics Graduate Program at Northwestern University. Prior to joining Northwestern, he was an Adjunct Assistant Professor (2013-2017) and Research Associate (2009-2013) in the department of electrical and computer engineering at the University of California, Los Angeles (UCLA). He has led several large multi-university research programs over the past ~12 years, all with significant industry involvement, focusing on development of spin-transfer-torque MRAM, voltage-controlled MRAM, antiferromagnetic MRAM, and unconventional computing architectures based on magnetic devices. Pedram has published more than 110 papers in peer-reviewed academic journals, and is an inventor on 15 issued patents. 
+Pedram received the B.Sc. degree from Sharif University of Technology in 2004, and the Ph.D. degree (cum laude) from Delft University of Technology (TU Delft), The Netherlands, in 2008, both in electrical engineering. He and his team placed top-6 out of 3,000 entries worldwide in the Cisco Innovation Grand Challenge in 2015. He was a finalist for the Intermag best student paper award in 2008. He received the Northwestern University ECE department's Best Teacher Award in 2020. 
+He serves on the Editorial Board of Journal of Physics: Photonics (IOP), and on the Early Career Editorial Board of Multifunctional Materials (IOP). He has served on the technical program committees and organizing committees of numerous conferences, and is a member of the Flash Memory Summit conference advisory board. Pedram is Chair of the Chicago Chapter of the IEEE Magnetics Society, and represents the IEEE Magnetics Society on the IEEE Task Force for Rebooting Computing (TFRC) Executive Committee. He is a Senior Member of the IEEE.
+
+<br>For more information, please see his webpages at https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/khalili-pedram.html
+
+</div>
+
+
+
+
+<div class="center">
+<h1> <br> Panelists </h1> 
+
+
+<div class="center" style="float:left; max-width: 450px; margin: 15px;">
+<h2> Dr. Siddharth Rao</h2>
+<h3> IMEC </h3>
+<p id="para" style=" text-align: justify">
+<img src="figures/sid_rao.jpg" alt="Siddharth Rao" style="float:right; width:110px; margin: 10px 10px 15px 15px;"></img>
+Dr. Siddharth Rao received his doctoral degree in electrical engineering from the National University of Singapore (NUS) in 2014 for his research in microwave-assisted magnetic recording (MAMR) for high density hard disk drive (HDD) technology beyond 10 Tb/in2. Since 2015, he has worked at IMEC as a senior device researcher specializing in magnetic memory technologies. In his role, he leads the characterization activities in STT-MRAM for a wide range of embedded and standalone memory applications including cache applications, Internet-of-Things (IoT) and high density NVM. His current activities encompass investigating novel spin orbit torque (SOT) and voltage controlled (VCMA) effects for high speed memory and machine learning applications. Beyond these, his research interests include exploring new hardware for neuromorphic and bio-inspired computing, NVM design for new computing paradigms, and low power computing. He has authored and co-authored more than 50 scientific publications in peer-reviewed journals (h-index=10) and international conferences, and currently hold 2 published patents.
+</p>
+</div>
+
+<!--
+<div class="center" style="float:left; max-width: 450px; margin: 15px;">
+<h2> Dr. Patrick Sheridan </h2>
+<h3> Micron Advanced Memory Systems</h3>
+
+<p id="para" style=" text-align: justify">
+<img src="figures/p_sheridan.jpg" alt="Patrick Sheridan" style="float:right; width:110px; margin: 10px 10px 15px 15px;"></img>
+
+Patrick Sheridan received his Ph.D. and M.S. degrees in Electrical Engineering from the University of Michigan in 2015 and 2012, respectively, and earned B.S. degrees in Computer Engineering and Mathematics from Virginia Polytechnic and State University in 2009.  Dr. Sheridan is currently a research scientist in the Micron Advanced Memory Systems Near Data Computing group and works from Boulder, CO. His research focuses on memory systems architecture and modeling and he maintains interests in non-von Neumann architectures and neuromorphic computing.
+For more information, please see his webpage at http://linkedin.com/in/sheridp
+
+</p>
+</div>
+
+-->
+
+
+
+
+
+<!--
+<div class="center" style="float:left; max-width: 450px; margin: 15px;">
+<h2> Dr. Akhilesh Jaiswal </h2>
+<h3> Univeristy of Southern California</h3>
+<!--
+<p id="para" style=" text-align: justify">
+<img src="https://dfan.engineering.asu.edu/wp-content/uploads/2019/09/deliang-portrait-2_meitu_1.jpg" alt="Deliang Fan" style="float:right; width:110px; margin: 10px 10px 15px 15px;"></img>
+Deliang Fan is currently an assistant professor in the School of Electrical, Computer and Energy Engineering at Arizona State University. Before joining ASU in 2019, he was an assistant professor in Department of Electrical and Computer Engineering at University of Central Florida, Orlando, Florida. He received his master's degree and doctoral degree under the supervision of Prof. Kaushik Roy, in electrical and computer engineering from Purdue University, West Lafayette, Indiana in 2012 and 2015, respectively. For more information,
+please see his webpage at https://dfan.engineering.asu.edu/ .</b> 
+</p>
+-->
+</div>
+
+
+</div>
+
+</div>
+
+
+</body>
+
+</html>
