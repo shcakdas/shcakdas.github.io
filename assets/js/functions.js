@@ -3,7 +3,7 @@
 $( document ).ready(function() {
 
   // DOMMouseScroll included for firefox support
-  var canScroll = true,
+  var canScroll = false,
       scrollController = null;
   $(this).on('mousewheel DOMMouseScroll', function(e){
 
@@ -17,7 +17,7 @@ $( document ).ready(function() {
         canScroll = false;
         clearTimeout(scrollController);
         scrollController = setTimeout(function(){
-          canScroll = true;
+          canScroll = false;
         }, 800);
         updateHelper(1);
       }
@@ -25,7 +25,7 @@ $( document ).ready(function() {
         canScroll = false;
         clearTimeout(scrollController);
         scrollController = setTimeout(function(){
-          canScroll = true;
+          canScroll = false;
         }, 800);
         updateHelper(-1);
       }
