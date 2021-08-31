@@ -20,7 +20,7 @@
 					text-align:justify;
 					max-width:1234px;
           color: white;
-          width: 90%;
+          width: 100%;
 					}
 
 			.header--logo{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;text-decoration:none;color:#fff}
@@ -90,6 +90,8 @@
     font-size: 24px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
+    margin-right: 3px;
+    float: left;
     }
     .mainbutton:hover {
     background-color: #ffffff;
@@ -112,13 +114,14 @@
     display: inline-block;
     transition-duration: 0.4s;
     cursor: pointer;
-    border-radius: 8px;
     padding-top: 2.5px;
     padding-bottom: 1.5px;
+    border-radius: 8px;
+    border:1px;
     font-size: 22px;
     font-family: 'Montserrat', Arial, sans-serif;;
     font-weight: bold;
-    margin:auto
+    float:left
     }
     .button:hover {
     background-color: whitesmoke;
@@ -156,22 +159,26 @@
     <button class="button" onclick="location.href='mim_webinars-about.html'" type="button">
       About Host</button>
     <button class="button" onclick="location.href='mim_webinars-contact.html'" type="button">
-      Contact</button>      
+      Contact</button>
+      <p><br><br></p>      
 
 
   </div>
 
-
- <p style="margin-left: 1cm;"> Detailed information for the next webinar <br></p>
+<div>
+ <p style="margin-left: 1cm; margin-top:10px;"><br><br><br><br>Detailed information for the next webinar <br><br></p>
+</div>
 <div class="imgbox">
 <img class="center-fit" style="margin-left:auto; margin-right:auto; float: right;" src="figures/VonNeumannBottleneck.jpg" alt="VonNeumannBottleneck" >
    
 
 </div>
-      
-    <h1 style="font-size: 2cm; margin-top: 2cm; text-align: center; font-family: 'Montserrat', Arial, sans-serif;"> Mondays<br>in<br>Memory</h1>
+ <div>
+  <h1 style="margin-top: 2cm; text-align: center; font-family: 'Montserrat', Arial, sans-serif; font-size: 10vmax;"> Mondays<br>in<br>Memory</h1>
+ </div>      
+  
 <div>
-  <h2 style="text-align: center;"> Next Talk: 2/August/2021, 4-5:30pm CET  
+  <h2 style="text-align: center;"> <br><br>Next Talk: 2/August/2021, 4-5:30pm CET  
   </h2>
   <h3 style="text-align: center;">
   <p id="countdown"></p>
