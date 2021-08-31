@@ -14,6 +14,7 @@
   @font-face{font-family:'Montserrat';src:url("fonts/Montserrat-Bold.eot");src:local("☺"),url("fonts/Montserrat-Bold.woff") format("woff"),url("fonts/Montserrat-Bold.ttf") format("truetype"),url("fonts/Montserrat-Bold.svg") format("svg");font-weight:700;font-style:normal}
 
 
+
    body		{
 					background-color: #0C0C0C;
 					text-align:justify;
@@ -58,6 +59,12 @@
     display: table;
     clear: both;
    }
+
+   @media screen and (max-width:600px) {
+   .column {
+    width: 100%;
+   }
+  }
       
       
    .mainbutton {
@@ -264,13 +271,13 @@ table.blueTable tr:hover {background-color: #5c5c5c9d;}
 
          <p style="margin-left: 1cm;"> An introduction to the MiM webinar series <br></p>
 
-            <img style="margin-left:auto; margin-right:auto; width: %50; float: right;" src="figures/VonNeumannBottleneck.jpg" alt="VonNeumannBottleneck" >  
-            <h1 style="font-size: 2cm; margin-top: 2cm; margin-left: 3cm; font-family: 'Montserrat', Arial, sans-serif;"> Mondays<br>in<br>Memory</h1>
+            <img style="margin-left:auto; margin-right:auto; width: %80; float: right;" src="figures/VonNeumannBottleneck.jpg" alt="VonNeumannBottleneck" >  
+            <h1 style="font-size: 2cm; margin-top: 2cm; align-self: center; font-family: 'Montserrat', Arial, sans-serif;"> Mondays<br>in<br>Memory</h1>
             
             <p><br><br><br><br><br><br><br></p>  
 
 
-      <div class="row" style="align-self: center;">
+      <div class="row">
         <div class="column">
           <a class="link" href="#0">
             <h3>WHAT IS MIM?</h3>
@@ -294,7 +301,7 @@ table.blueTable tr:hover {background-color: #5c5c5c9d;}
                 
 <footer>
               <a>
-              <p style="color: whitesmoke; font-family: 'Montserrat'; margin-left: 2cm;">Please check our program under next and upcoming talks and spread the word.<br>
+              <p style="color: whitesmoke; font-family: 'Montserrat'; text-align: center;">Please check our program under next and upcoming talks and spread the word.<br>
               <strong style="color: cadetblue;"> We look forward to welcoming you to our next webinar!</strong></p>
               </a>
 </footer>
