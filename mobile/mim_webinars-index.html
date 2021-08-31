@@ -65,6 +65,15 @@
     width: 100%;
    }
   }
+  .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
       
       
    .mainbutton {
@@ -251,7 +260,7 @@ table.blueTable tr:hover {background-color: #5c5c5c9d;}
             <img src="assets/img/MiM_w.png" alt="MIM" style="width:48.5px;height:26.5px; border-radius: 5px;">
             <p>MIM</p>
           </a>
-          <div style="margin-top: 1cm; margin-left: 2cm;">
+          <div style="margin-top: 1cm;">
             <button class="mainbutton" onclick="location.href='mim_webinars-index.html'" type="button">
               ´    `</button>
             <button class="button" onclick="location.href='mim_webinars-next talk.html'" type="button">
@@ -270,9 +279,13 @@ table.blueTable tr:hover {background-color: #5c5c5c9d;}
 
 
          <p style="margin-left: 1cm;"> An introduction to the MiM webinar series <br></p>
+      <div class="imgbox">
+        <img class="center-fit" style="margin-left:auto; margin-right:auto; float: right;" src="figures/VonNeumannBottleneck.jpg" alt="VonNeumannBottleneck" >
+           
 
-            <img style="margin-left:auto; margin-right:auto; width: %80; float: right;" src="figures/VonNeumannBottleneck.jpg" alt="VonNeumannBottleneck" >  
-            <h1 style="font-size: 2cm; margin-top: 2cm; align-self: center; font-family: 'Montserrat', Arial, sans-serif;"> Mondays<br>in<br>Memory</h1>
+      </div>
+              
+            <h1 style="font-size: 2cm; margin-top: 2cm; text-align: center; font-family: 'Montserrat', Arial, sans-serif;"> Mondays<br>in<br>Memory</h1>
             
             <p><br><br><br><br><br><br><br></p>  
 
