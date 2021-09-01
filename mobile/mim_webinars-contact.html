@@ -11,28 +11,94 @@
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <style>
-  .button {
-  background-color: darkblue;
-  border: #092436;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  border-radius: 8px;
-  margin-left: 23cm;
- }
-  .button:hover {
-  background-color: #ffffff;
-  color: darkblue;
-  box-shadow: 0 8px 16px 0 rgba(22, 96, 255, 0.2), 0 6px 20px 0 rgba(22, 96, 255, 0.2);
-  }
+     
+     @font-face{font-family:'Montserrat';src:url("fonts/Montserrat-Bold.eot");src:local("☺"),url("fonts/Montserrat-Bold.woff") format("woff"),url("fonts/Montserrat-Bold.ttf") format("truetype"),url("fonts/Montserrat-Bold.svg") format("svg");font-weight:700;font-style:normal}
+
+
+
+body		{
+   background-color: #0C0C0C;
+   text-align:justify;
+   max-width:1234px;
+   color: white;
+   width: 100%;
+   }
+
+.header--logo{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;text-decoration:none;color:#fff}
+
+.header--logo p{margin:0 0 0 10px;font-size:16px;font-weight:700;text-transform:uppercase}
+
+ 
+.imgbox {
+        display: grid;
+        height: 100%;
+    }
+    .center-fit {
+        max-width: 100%;
+        max-height: 100vh;
+        margin: auto;
+    }
   
-  .button:active {
-  background-color: darkblue;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+  
+.mainbutton {
+background-image:url("assets/img/MiM_w.png");
+background-size: cover; 
+border: #092436;
+opacity: 100;
+width: 59px;
+height: 30.35px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+transition-duration: 0.4s;
+cursor: pointer;
+border-radius: 8px;
+font-size: 24px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bold;
+margin-right: 3px;
+float: left;
+}
+.mainbutton:hover {
+background-color: #ffffff;
+color: rgb(44, 44, 44);
+box-shadow: 0 8px 16px 0 rgba(167, 167, 167, 0.747), 0 6px 20px 0 rgba(167, 167, 167, 0.747)
+}
+
+.mainbutton:active {
+background-color: rgb(70, 70, 70);
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+
+.button {
+border: #000000;
+background-color: whitesmoke;
+opacity: 100;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+transition-duration: 0.4s;
+cursor: pointer;
+padding-top: 2.5px;
+padding-bottom: 1.5px;
+border-radius: 8px;
+border:1px;
+font-size: 22px;
+font-family: 'Montserrat', Arial, sans-serif;;
+font-weight: bold;
+float:left
+}
+.button:hover {
+background-color: whitesmoke;
+color: darkslategrey;
+box-shadow: 0 8px 16px 0 rgba(167, 167, 167, 0.747), 0 6px 20px 0 rgba(167, 167, 167, 0.747)
+}
+
+.button:active {
+background-color: rgb(68, 68, 68);
+box-shadow: 0 5px #666;
+transform: translateY(4px);
  }
   .button1 {
   background-color: cadetblue;
@@ -97,541 +163,67 @@
   box-shadow: 0 8px 16px 0 rgba(126, 141, 172, 0.2), 0 6px 20px 0 rgba(126, 141, 172, 0.2);
   }
 
-  .button:hover {
-  background-color: #ffffff;
-  color: darkblue;
-  box-shadow: 0 8px 16px 0 rgba(22, 96, 255, 0.2), 0 6px 20px 0 rgba(22, 96, 255, 0.2);
-  }
-    
-    table.blueTable {
-  border: 3px solid #092436;
-  background-color: #dddddd;
-  width: 101%;
-  height: 202px;
-  text-align: left;
-  border-collapse: collapse;
-}
-table.blueTable td, table.blueTable th {
-  border: 1px solid #AAAAAA;
-  padding: 3px 2px;
-}
-table.blueTable tbody td {
-  font-size: 13px;
-  color: #333333;
-}
-table.blueTable tr:nth-child(even) {
-  background: #c6e0f7;
-}
-table.blueTable thead {
-  background: darkblue;
-  background: -moz-linear-gradient(top, #5592bb 0%, #1c5880 66%, rgb(0, 60, 116) 100%);
-  background: -webkit-linear-gradient(top, #5592bb 0%, #1c5880 66%, rgb(0, 60, 116) 100%);
-  background: linear-gradient(to bottom, #5592bb 0%, #1c5880 66%, rgb(0, 60, 116) 100%);
-  border-bottom: 2px solid rgb(0, 36, 134);
-}
-table.blueTable thead th {
-  font-size: 15px;
-  font-weight: bold;
-  color: #FFFFFF;
-  border-left: 2px solid #f5d0d0;
-}
-table.blueTable thead th:first-child {
-  border-left: none;
-}
-
-table.blueTable tfoot {
-  font-size: 14px;
-  font-weight: bold;
-  color: #FFFFFF;
-  background: #D0E4F5;
-  background: -moz-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
-  background: -webkit-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
-  background: linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
-  border-top: 2px solid #444444;
-}
-table.blueTable tfoot td {
-  font-size: 14px;
-}
-table.blueTable tfoot .links {
-  text-align: right;
-}
-table.blueTable tfoot .links a{
-  display: inline-block;
-  background: darkblue;
-  color: #FFFFFF;
-  padding: 2px 8px;
-  border-radius: 5px;
-}
-table.blueTable tr:hover {background-color: #5c5c5c9d;}
   </style>
-</head>
-<body>
-
-<!-- notification for small viewports and landscape oriented smartphones -->
-<div class="device-notification">
-  <a class="device-notification--logo" href="#0">
-    <img src="assets/img/MiM_w.png" alt="MIM">
+</head>  
+<body> 
+  <a class="header--logo" href="mim_webinars-index.html">
+    <img src="assets/img/MiM_w.png" alt="MIM" style="width:48.5px;height:26.5px; border-radius: 5px;">
     <p>MIM</p>
   </a>
-  <p class="device-notification--message">MIM has so much to offer that we must request you orient your
-     device to portrait or find a larger screen. You won't be disappointed.</p>
+  <div style="margin-top: 1cm;">
+    <button class="mainbutton" onclick="location.href='mim_webinars-index.html'" type="button">
+    </button>
+    <button class="button" onclick="location.href='mim_webinars-next talk.html'" type="button">
+      Next Talk</button>
+    <button class="button" onclick="location.href='mim_webinars-upcoming talks.html'" type="button">
+      Upcoming Talks</button>
+    <button class="button" onclick="location.href='mim_webinars-past talks.html'" type="button">
+      Past Talks</button>  
+    <button class="button" onclick="location.href='mim_webinars-about.html'" type="button">
+      About Host</button>
+    <button class="button" onclick="location.href='mim_webinars-contact.html'" type="button">
+      Contact</button>
+      <p><br><br></p>      
+
+
+  </div>
+
+<div>
+ <p style="margin-top:10px;"><br><br><br><br>An introduction to MiM webinars host <br><br></p>
 </div>
+<div class="imgbox">
+<img class="center-fit" style="margin-left:auto; margin-right:auto; float: right;" src="figures/VonNeumannBottleneck.jpg" alt="VonNeumannBottleneck" >
+   
 
-<div class="perspective effect-rotate-left">
-  <div class="container"><div class="outer-nav--return"></div>
-    <div id="viewport" class="l-viewport">
-      <div class="l-wrapper">
-        <header class="header">
-          <a class="header--logo" href="mim_webinar.html">
-            <img src="assets/img/MiM_w.png" alt="MIM" style="width:48.5px;height:26.5px; border-radius: 5px;">
-            <p>MIM</p>
-          </a>
-          <button class="header--cta cta">Contact Us</button>
-          <div class="header--nav-toggle">
-            <span></span>
-          </div>
-        </header>
-        <nav class="l-side-nav">
-          <ul class="side-nav">
-            <li class="is-active"><span>Home</span></li>
-            <li><span>Next Talk</span></li>
-            <li><span>Upcoming Talks</span></li>
-            <li><span>Past Talks</span></li>
-            <li><span>About</span></li>
-            <li><span>Contact Us</span></li>
-          </ul>
-        </nav>
-        <ul class="l-main-content main-content">
-          <li class="l-section section section--is-active">
-            <div class="intro">
-              <p> <br> <br> An introduction to the MiM webinar series </p>
-              <div class="intro--banner">
-                <h1>Mondays<br>in<br>Memory</h1>
-                <button class="cta">Contact Us
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                  </svg>
-                  <span class="btn-background"></span>
-                </button>
-                <img src="figures/VonNeumannBottleneck.jpg" alt="VonNeumannBottleneck" >
-                <br><br>
-              </div>
-              <div class="intro--options">
-                <a href="#0">
-                  <h3>What is Mim?</h3>
-                  <p>MIM is a free biweekly webinar series open to everyone around the world and dedicated to all aspects and technologies related to in-memory computing (including, in a broader sense, near-memory computing too). After all, different approaches to in-memory computing have a lot in common and can inspire one another.</p>
-                </a>
-                <a href="#0">
-                  <h3>When It Will Be?</h3>
-                  <p>MIM will be held on the first and third Monday of each month (starting in May 2021) and to maximize its outreach around the world, we start at 4pm CET (7am Pacific time, and 10pm Beijing time).</p>
-                </a>
-                <a href="#0">
-                  <h3>General Plan</h3>
-                  <p>Each webinar starts with a 40mins talk by a speaker, followed up with a 40mins questions and discussions with the speaker and two panel members. Dr. Nima Taherinejad hosts the webinars, and together with his team they organize the MiM series.</p>
-                </a>
-              </div>
-            <footer>
-              <a>
-              <p style="color: whitesmoke;">Please check our program under next and upcoming talks and spread the word.<br>
-              <strong style="color: cadetblue;"> We look forward to welcoming you to our next webinar!</strong></p>
-              </a>
-            </footer>
-            </div>
-          </li>
-          <li class="l-section section">
-            <script>
+</div>
+ <div >
+  <h1 style="margin-top: 2cm; text-align: center; font-family: 'Montserrat', Arial, sans-serif; font-size: 10vmax;"> Mondays<br>in<br>Memory</h1>
+ </div>
 
-
-
-              // Update the count down every 1 second
-              var x = setInterval(function() {
-              
-              var target = new Date("August 2, 2021 14:00:00Z");
-              var targetmn = target.getUTCMonth();
-              var targetd = target.getUTCDate();
-              var targeth = target.getUTCHours();
-              var targetm = target.getUTCMinutes();
-              var targets = target.getUTCSeconds();
-              var targetInS = (((targetmn*31+targetd)*24+targeth)*60+targetm)*60+targets;
-              
-              // Set the date we're counting down to
-              //  var countDownDate = Date.UTC(2021,5,12,18,1);
-                // Get today's date and time
-                var now = new Date();
-                var nowmn = now.getUTCMonth();
-                var nowd = now.getUTCDate();
-                var nowh = now.getUTCHours();
-                var nowm = now.getUTCMinutes();
-                var nows = now.getUTCSeconds();
-                var nowInS = (((nowmn*31+nowd)*24+nowh)*60+nowm)*60+nows;
-                var nowOffset = now.getTimezoneOffset();
-                // Find the distance between now and the count down date
-                var distance = 1000 *(targetInS - nowInS) ;
-                  
-                // Time calculations for days, hours, minutes and seconds
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                  
-                // Output the result in an element with id="countdown"
-                document.getElementById("countdown").innerHTML = "Webinar starting in " + days + " days " + hours + " hours "
-                + minutes + " minutes " + seconds + " seconds "  ;
-                  
-                // If the count down is over, write some text 
-                if (distance < 0) {
-                  clearInterval(x);
-                  document.getElementById("countdown").innerHTML = "Webinar in progress";
-                }
-                
-                if (distance < -5400000) {
-                  clearInterval(x);
-                  document.getElementById("countdown").innerHTML = "Webinar ended";
-                }
-              }, 1000);
-            </script>
-            <div class="topmenu2">
-              <p id="m2" style="margin-left: 10px"> <br> <br> Detailed information for the next webinar </p>
-            </div> 
-              <div class="center">
-
-
-               <div>
-               <h2 style="text-align: justify; margin-left: 50px;"> Next Talk: 2/August/2021, 4-5:30pm CET  
-               </h2>
-               <h3 style="text-align: justify; margin-left: 50px;">
-               <p id="countdown"></p>
-               </h3>
-               <p id="para" style="text-align: justify; margin-left: 50px;">
-               <b>Link:</b>   To be posted
-               <br>
-               4pm Central European time is (usually) 7am Pacific time and 10pm Beijing time
-               <br> <br>
-               </p>
-               
-              
-              
-              
-              
-              
-               <h1 style="text-align: justify; margin-left: 60px;"> Mythic's Flash-based Analog Compute-in-Memory</h1>           
-               <h2 style="text-align: justify; margin-left: 60px;"> Dr. Dave Fick, CTO of Mythic</h2>
-              <p> <br> </p>
-              
-               <h3 style="text-align: justify; margin-left: 25px;"> Abstract </h3>
-               <img src="figures/david_fick.jpg" alt="Dave Fick" style="float:right; width:200px; margin: 10px 10px 15px 15px;"></img>
-               <p id="para" style=" text-align: justify; margin-left: 30px;">
-               AI and many other applications have opportunities to build systems that merge memory and computing into a unified structure in ways that yields significant improvements in energy efficiency, performance, and cost. In these scenarios, "moving the compute to the memory" makes sense because the applications have large amounts of data to process and relatively simple operations to perform, which makes it not too difficult to create specialized processing near the memory when traditionally moving the data to the main system processor would be slow and inefficient. These approaches have a wide variety of applications as well as approaches. On one end of the spectrum, systems that have processing inside of an SSD to perform searches inside the drive itself, and on the other end of the spectrum, systems that have analog compute performing mathematics directly on the bitlines of the memory arrays. In this talk, we will provide an overview of many of these approaches as well as the methods to their madness.</p>
-              
-               <h3 style="text-align: justify; margin-left: 25px;"> Biography </h3>
-              
-               <p id="para" style=" text-align: justify; margin-left: 30px;">
-               Dave Fick co-founded Mythic with Mike Henry in 2012, a company building next-generation intelligence processing units (IPUs) for edge and cloud inference. Mythic has raised $165M of venture capital to combine analog computing, dataflow architecture, and compute-in-memory to provide the best combination of performance and energy efficiency available. Dave received his Ph.D. from the University of Michigan under David Blaauw and Dennis Sylvester at the Michigan Integrated Circuits Lab.
-               <br>For more information, please see his webpages at <a href="http://davefick.com">http://davefick.com</a>
-               or <a href="https://www.mythic-ai.com/">https://www.mythic-ai.com/</a>
-               
-               </p>
-              
-              </div>
-            <div>
-              <button class="button" onclick="location.href='next_talk.html'" type="button">
-                      more info</button>
-            </div>
-              
-          </li>
-          <li class="l-section section">
-            
-            
-            <div class="center">
-              <p style="margin-left: 10px;"> <br> <br> More information about our future talks</p>
-              <h2 style="margin-left: 40px;">  <br>  Upcoming Webinars
-              </h2>
-
-
-              <div class="about">
-                <p><br>
-                <br></p>
-                <div>
-              
-                
-                
-
-                    <table id="tbl" class = "blueTable">           
-                        <thead>
-                          <tr>
-                            <th style="width:150px">Date</th>
-                            <th style="width:160px">Speaker</th>
-                            <th style="width:460px">Title</th>
-                            <th style="width:360px">Panelists</th>
-                          </tr>
-                        </thead>
-                           
-                      <tbody>
-                        <tr>
-                         <td>September/2021</td>
-                         <td>No Webinar</td>
-                         <td>Summer Break!</td>
-                         <td>Sunshine</td>
-                        </tr>
-                
-                        <tr>
-                         <td>4/October/2021</td>
-                         <td>TBA</td>
-                         <td></td>
-                         <td></td>
-                        </tr>
-                        
-                        <tr>
-                         <td>18/October/2021</td>
-                         <td>Prof. Naresh Shanbhag,  <br>
-                          University of Illinois,  <br>
-                           Urbana-Champaign</td>
-                         <td>TBA</td>
-                         <td></td>
-                        </tr>
-
-                        <tr>
-                          <td>1/November/2021</td>
-                          <td>No Webinar</td>
-                          <td>Public Holiday in Austria</td>
-                          <td></td>
-                         </tr>
-
-                         <tr>
-                          <td>15/November/2021</td>
-                          <td>Prof. Kaushik Roy,  
-                            <br>
-                             Purdue University 
-                          </td>
-                          <td></td>
-                          <td></td>
-                         </tr>
-
-                         <tr>
-                          <td>6/December/2021</td>
-                          <td>TBA</td>
-                          <td></td>
-                          <td></td>
-                         </tr>
-
-                         <tr>
-                          <td>20/December/2021</td>
-                          <td>No Webinar</td>
-                          <td>Winter Break</td>
-                          <td>Snow</td>
-                         </tr>
-                      </tbody>
-                    </table>
-                </div>
-
-                
-
-                
-                 
-                
-                
-                
-                
-                
-              
-                <p>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                </p>
-              
-              
-                <div class="about--options">
-                <a href="#0">
-                  <h3>Knowledge</h3>
-                </a>
-                <a href="#0">
-                  <h3>In</h3>
-                </a>
-                <a href="#0">
-                  <h3>Memory</h3>
-                </a>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-              <div class="center">
-                <p id="m2" style="margin-left: 10px;">  <br> <br>More information about our past talks </p>
-                <h2 style="margin-left: 40px;">  <br> Past Webinars
-                </h2>
-               <div class="about">
-                <pre>
-
-                </pre>
-                      <table id="tbl" class = "blueTable" style="align-items: stretch;">           
-                         <thead>
-                            <tr>
-                             <th style="width:40px">Date</th>
-                             <th style="width:160px">Speaker</th>
-                             <th style="width:400px">Title</th>
-                             <th style="width:360px">Panelists</th>
-                            </tr>
-                         </thead>
-                         
-                         <tbody>
-                          <tr>
-                           <td>5/July/2021</td>
-                           <td>Dr. Damien Querlioz, <br> Uni. Paris-Saclay </td>
-                           <td>In-Memory Computing with Imperfect or Unreliable Memory Devices</td>
-                           <td>Dr. Patrick Sheridan (Micron Technology), Dr. Stephan Menzel (Jülich Research Center) </td>
-                          </tr>
-                     
-                          <tr>
-                           <td>21/June/2021</td>
-                           <td>Dr. Abu Sebastian, <br> IBM Zurich </td>
-                           <td>Deep learning acceleration: A killer application for in-memory computing? (<a href="flyer/MiM_Talk4_20210621.pdf" target="_blank">Abstract & Bio</a>, <a href="slides1/MiM_Talk4_20210621.pdf" target="_blank">Slides</a>, <a href="video/MiM_Talk4_20210621.html" target="_blank">Video</a>)</td>
-                           <td>Dr. Shahar Kvatinsky (Technion - Israel Institute of Technology), Dr. Adnan Mehonic (University College London)</td>
-                          </tr>
-                      
-                      
-                          <tr>
-                           <td>7/June/2021</td>
-                           <td>Fabrice Devaux, <br> UPmem </td>
-                           <td>UPMEM DPU, architecture of the first commercially available PIM system (<a href="flyer/MiM_Talk3_20210607.pdf" target="_blank">Abstract & Bio</a>, <a href="slides/MiM_Talk3_20210607.pdf" target="_blank">Slides</a>, <a href="video/MiM_Talk3_20210607.html" target="_blank">Video</a>)</td>
-                           <td>Dr. Juan Gómez Luna (ETH Zurich), Dr. Izzat El Hajj (American University of Beirut)</td>
-                          </tr>
-                     
-                          <tr>
-                           <td>17/May/2021</td>
-                           <td>Prof. Said Hamdioui, <br> TU Delft</td>
-                           <td>Memristor-based computation-in-memory for edge AI: Opportunities and Challenges (<a href="flyer/MiM_Talk2_20210517.pdf" target="_blank">Abstract & Bio</a>, <a href="slides/MiM_Talk2_20210517.pdf" target="_blank">Slides</a>, <a href="video/MiM_Talk2_20210517.html" target="_blank">Video</a>)</td>
-                           <td>Dr. Ioannis Vourkas (UTFSM, Chile)</td>
-                          </tr>
-                     
-                     
-                          <tr>
-                           <td>3/May/2021</td>
-                           <td>Prof. Onur Mutlu, <br> ETH Zurich </td>
-                           <td>Intelligent Architectures for Intelligent Machines (<a href="flyer/MiM_Talk1_20210503.pdf" target="_blank">Abstract & Bio</a>, <a href="slides/MiM_Talk1_20210503.pdf" target="_blank">Slides.PDF</a>, <a href="slides/MiM_Talk1_20210503.pdf" target="_blank">Slides.PPT</a>, <a href="video/MiM_Talk1_20210503.html" target="_blank">Video</a>)</td>
-                           <td>Dr. Deliang Fan (Arizona State Uni.), <br>
-                            Dr. Christian Weis (TU Kaiserslautern) </td>
-                          </tr>
-                            
-                      
-              
-                         </tbody>
-                         
-                      </table>
-                      <p>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                      </p>
-                      
-                      
-                      <div class="about--options">
-                        <a href="#0">
-                          <h3>Knowledge</h3>
-                        </a>
-                        <a href="#0">
-                          <h3>In</h3>
-                        </a>
-                        <a href="#0">
-                          <h3>Memory</h3>
-                        </a>
-                      </div>
-                </div> 
-              </div>
-              
-          </li>
-          <li class="l-section section">
-           <div class="center">
-            <div>
-              <br>
-              
-             <h2> Dr. Nima TaheriNejad 
-             <img src="figures/tn.jpg" alt="Nima's Picture" style="float:left; width:150px; margin: 10px 10px 15px 15px;"></img>
-             </h2>
-             <p id="para" style="max-width: 1300px; text-align: justify; margin-top: -0.5cm;">
-             has PhD in Electrical and Computer Engineering from University of British Columbia (UBC), Vancouver, Canada.  He is currently an assistant professor in TU Wien (formerly known also as Technical University of Vienna).
-             Nima has published two books and more than 60 peer-reviewed articles, and has served as a reviewer and an editor of various journals and conferences. He has also been an organizer and a chair of various conferences and workshops.<br>
-             Nima has received several awards and scholarships from universities, conferences, and competitions he has attended. For more detailed information please visit his <button style ="margin-left: 0cm;" class="button button6" onclick="location.href='http://www.ict.tuwien.ac.at/staff/taherinejad/'" type="button">website</button>.
-             <br>Nima's interest in in-memory computing has peaked during last years. His work in this field is focused on design and implementation of memristive in-memory computing circuits and systems. 
-             Below you find a list of his and his team's publications related to in-memory computing.
-             </p>
-             <h3 style="margin-left: 20px; margin-top: -0.1cm;"> Related publications since 2015 </h3>
-             <p style="font-family: 'Times New Roman', Times, serif; margin-left: 25px; margin-top: -0.5 cm;">
-                <b>Used Tags:</b> <font color="blue"><b>[J]</b></font> Peer-reviewed Journal Papers, <font color="firebrick"><b>[C]</b></font> Peer-reviewed Conference Papers,  <font color="magenta"><b>[B]</b></font> Books, <font color="red"><b>[P]</b></font> Patents, <font color="limegreen"><b>[M]</b></font> Other Publications.
-             </p>
-             <ol reversed style="text-align:justify; max-width: 1500px; margin-left: 30px; margin-top: -0.1cm;" >
-	            <li> <font color="limegreen"><b>[M3]</b></font> D. Radakovits and <b>N. Taherinejad</b>, <i>“BEhavioral Leakage and IntEr-cycle Variability Emulator model for ReRAMs (BELIEVER)”</i>, arXiv:2103.04179, pp. 1-13, 2021.</li>
-	            <li> <font color="blue"><b>[J5]</b></font> <b>N. Taherinejad</b>, <i>“SIXOR: Single-cycle In-memristor XOR”</i>, IEEE Transactions on Very Large Scale Integration Systems (TVLSI), pp. 1-11, 2021.</li>
-	            <li> <font color="limegreen"><b>[M2]</b></font> S. M. Laube and <b>N. Taherinejad</b>, <i>“Device Variability Analysis for Memristive Material Implication”</i>, arXiv:2101.07231, pp. 1-12, 2021.</li>
-	            <li> <font color="blue"><b>[J4]</b></font> M. R. Alam, M. H. Najafi and <b>N. Taherinejad</b>, <i>“Exact Stochastic Computing Multiplication in Memristive Memory”</i>, IEEE Design and Test, pp. 1-8, 2021.</li>
-	            <li> <font color="limegreen"><b>[M1]</b></font> M. R. Alam, M. H. Najafi and <b>N. Taherinejad</b>, <i>“Sorting in Memristive Memory”</i>, arXiv:2012.09918, pp. 1-10, 2020.</li>
-	            <li> <font color="blue"><b>[J3]</b></font> D. Radakovits, <b>N. Taherinejad</b>, M. Cai, T. Delaroche, and S. Mirabbasi, <i>“A Memristive Multiplier using Semi-Serial IMPLY-based Adder”</i>, IEEE Transactions on Circuits and Systems I: Regular Papers, pp. 1495-1506, 2020.</li>
-	            <li> <font color="firebrick"><b>[C6]</b></font> M. R. Alam, M. H. Najafi and <b>N. Taherinejad</b>, <i>“Exact In-Memory Multiplication Based on Deterministic Stochastic Computing”</i>,  2020 IEEE International Symposium on Circuits and Systems (ISCAS), pp. 1-5, 2020.</li>
-	            <li> <font color="blue"><b>[J2]</b></font> S. G. Rohani <b>N. Taherinejad</b>, D. Radakovits, <i>“A Semi-Parallel Full-Adder in IMPLY Logic”</i>, IEEE Transactions on Very Large Scale Integration Systems (TVLSI), vol. 28, no.1, pp. 297-301, 2020.</li>
-	            <li> <font color="blue"><b>[J1]</b></font> <b>N. Taherinejad</b> and D. Radakovits, <i>“From behavioral design of memristive circuits and systems to physical implementations”</i>, IEEE Circuit and Systems (CAS) Magazine, vol. 19(4), pp. 6-18, 2019.</li>
-	            <li> <font color="firebrick"><b>[C5]</b></font> <b>N. Taherinejad</b>, T. Delaroche, D. Radakovits, and S. Mirabbasi, <i>“A semi-serial topology for compact and fast IMPLY-based memristive full adders”</i>, IEEE New Circuits and Systems symposium (NewCAS), pp. 1-4, 2019.</li>
-	            <li> <font color="firebrick"><b>[C4]</b></font> D. Radakovits and <b>N. Taherinejad</b>, <i>“Implementation and characterization of a memristive memory system”</i>, In 2019 IEEE 32nd Canadian Conference on Electrical and Computer Engineering (CCECE), pp. 1-5, May 2019.</li>
-	            <li> <font color="firebrick"><b>[C3]</b></font> S. Rohani G., <b>N. Taherinejad</b>, <i>“An Improved Algorithm for IMPLY Logic Based Memristive Full-Adder”</i>, 2017 IEEE 30th Canadian Conference on Electrical and Computer Engineering (CCECE), pp. 1-4, 2017.</li>
-	            <li> <font color="firebrick"><b>[C2]</b></font> <b>N. Taherinejad</b>, S. Manoj P. D., M. Rathmair, A. Jantsch, <i>“Fully digital write-in scheme for multi-bit memristive storage”</i>, 13th International Conference on Electrical Engineering, Computing Science and Automatic Control (CCE), Mexico City, Mexico, pp. 1-6, 2016. </li>
-	            <li> <font color="firebrick"><b>[C1]</b></font> <b>N. Taherinejad</b>, S. Manoj P. D., A. Jantsch, <i>“Memristors' Potential for Multi-Bit Storage and Pattern Learning”</i>, IEEE Proceedings of the 9th European Modelling Symposium (EMS 2015), pp. 450-455, 2015.</li>
-             </ol>
-            </div>
-           </div>
-          </li>
-          <li class="l-section section">
-            <div class="contact">
-              <div class="contact--lockup">
-                <div class="modal">
-                  <div class="modal--information">
-                    <p style="text-align: justify; max-width: 17cm; margin-left: 1cm;"> &nbsp The best way to contact us is via my email account below. I regularly check this email (unless I am not available) and do my best to get back to you as soon as possible.<br>
+ <div style="display: flex; justify-content: center;">
+                    <p style="text-align: justify; max-width: 17cm; background-color:black ;"> &nbsp The best way to contact us is via my email account below. I regularly check this email (unless I am not available) and do my best to get back to you as soon as possible.<br>
                       If you would like us to invite you as a speaker, if you would like to have in our series or have any other suggestions, comments, or feedback, feel free to drop us an email.<br>
-                      Thanks again for visiting MiM webpage and please do not hesitate to contact us.</p>
+                      Thanks again for visiting MiM webpage and please do not hesitate to contact us.<br>
 
                     
-                  </div>
-                  <p>
-                    <button style= "margin-left: -6.5cm;" class="button button3" onclick="location.href='http://www.ict.tuwien.ac.at/staff/taherinejad/'" type="button">
+
+
+                    <button class="button button3" onclick="location.href='http://www.ict.tuwien.ac.at/staff/taherinejad/'" type="button">
                       Nima TaheriNejad</button> <br> <br>
-                    <button style= "margin-left: -4cm;" class="button button1" onclick="location.href='mailto:nima.taherinejad@tuwien.ac.at'" type="button">
+                    <button class="button button1" onclick="location.href='mailto:nima.taherinejad@tuwien.ac.at'" type="button">
                     nima.taherinejad@tuwien.ac.at</button> <br> <br>
-                    <button style= "margin-left: -6.5cm;" class="button button2" onclick="location.href='tel:+43(1)5880138452'" type="button">
+                    <button class="button button2" onclick="location.href='tel:+43(1)5880138452'" type="button">
                       +43(1)58801-38452</button> <br>
-                  </p>
-                  <p style="text-align: justify; margin-left: 1cm;"> <br> &nbsp If you want to be added (or removed from) MiM mailing list, <br> please send an email to Mr. Reza Rashidi:</p>
-                  <button style= "margin-left: -5.25cm;" class="button button4" onclick="location.href='mailto:reza.rashidi@tuwien.ac.at'" type="button">
+
+ <br> &nbsp If you want to be added (or removed from) MiM mailing list, <br> please send an email to Mr. Reza Rashidi:<br>
+                  <button class="button button4" onclick="location.href='mailto:reza.rashidi@tuwien.ac.at'" type="button">
                     reza.rashidi@tuwien.ac.at</button> <br> <br>
-                  <button style="text-align: justify; margin-left: -2.60cm;" class="button button5" onclick="location.href='https://www.google.com/maps/place/Institut+f%C3%BCr+Computertechnik+der+TU+Wien/@48.1962776,16.3672474,17z/data=!3m1!4b1!4m5!3m4!1s0x476d07823dd1a847:0x47a4f4a37330258c!8m2!3d48.196274!4d16.3694361'" type="button">TU Wien (Technical University of Vienna)<br>
+                  <button class="button button5" onclick="location.href='https://www.google.com/maps/place/Institut+f%C3%BCr+Computertechnik+der+TU+Wien/@48.1962776,16.3672474,17z/data=!3m1!4b1!4m5!3m4!1s0x476d07823dd1a847:0x47a4f4a37330258c!8m2!3d48.196274!4d16.3694361'" type="button">TU Wien (Technical University of Vienna)<br>
                     Institute of Computer Technology (ICT)<br>
                     Gußhausstraße 27-29 / 384 / CA0229<br>
                     1040 Wien,
-                    Austria</button>
-                  <pre></pre>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <ul class="outer-nav">
-    <li class="is-active">Home</li>
-    <li>Next Talk</li>
-    <li>Upcoming Talks</li>
-    <li>Past Talks</li>
-    <li>About Host</li>
-    <li>Contact Us</li>
-  </ul>
-</div>
+                    Austria</button> </p>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
-<script src="assets/js/functions-min.js"></script>
+  </div>
 </body>
 </html>
