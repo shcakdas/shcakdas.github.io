@@ -125,8 +125,6 @@ a:active {
 }
 
 table.SortTable {
-  border: 3px solid #092436;
-  background-color: #dddddd;
   width: 101%;
   height: 202px;
   text-align: left;
@@ -134,7 +132,8 @@ table.SortTable {
   border-collapse: collapse;
   zoom: 90 % ;
   transform: scale(calc(9/10));
-  border-spacing: 0
+  border-spacing: 0;
+  
 }
 table.SortTable td, table.SortTable th {
   border: none;
@@ -142,32 +141,20 @@ table.SortTable td, table.SortTable th {
 }
 table.SortTable tbody td {
   font-size: 13px;
-  color: #333333;
-}
-table.SortTable tr:nth-child(odd) {
-  background: #0C0C0C;
-  color:white
+  color: #c2bdbd;
+  border: none;
+  background-color: #0c0c0c;
 }
 
-table.SortTable tr:nth-child(even) {
-  border-color: #0C0C0C;
-
-}
-table.SortTable thead {
-  background: darkblue;
-  background: -moz-linear-gradient(top, #5592bb 0%, #1c5880 66%, rgb(0, 60, 116) 100%);
-  background: -webkit-linear-gradient(top, #5592bb 0%, #1c5880 66%, rgb(0, 60, 116) 100%);
-  background: linear-gradient(to bottom, #5592bb 0%, #1c5880 66%, rgb(0, 60, 116) 100%);
-  border-bottom: 2px solid rgb(0, 36, 134);
 }
 table.SortTable thead th {
   font-size: 15px;
   font-weight: bold;
   color: #FFFFFF;
-  border-left: none;
+  border: none;
 }
 table.SortTable thead th:first-child {
-  border-left: none;
+  border: none;
 }
 
 table.SortTable tfoot {
@@ -193,8 +180,7 @@ table.SortTable tfoot .links a{
   padding: 2px 8px;
   border-radius: 5px;
 }
-table.SortTable tr:hover {background-color: #5c5c5c9d;}
-
+table.SortTable tr:hover {background-color: #a8a8a8;}
   </style>
 </head>
 <body>
@@ -244,10 +230,11 @@ table.SortTable tr:hover {background-color: #5c5c5c9d;}
              Below you find a list of his and his team's publications related to in-memory computing.
              </p>
              <h3 style=" margin-top: -0.1cm;"> Related publications since 2015 </h3>
-             <p style="font-family: 'Times New Roman', Times, serif; margin-top: -0.5 cm;">
+             <p>
                 <b>Used Tags:</b> <font color="blue"><b>[J]</b></font> Peer-reviewed Journal Papers, <font color="firebrick"><b>[C]</b></font> Peer-reviewed Conference Papers,  <font color="magenta"><b>[B]</b></font> Books, <font color="red"><b>[P]</b></font> Patents, <font color="limegreen"><b>[M]</b></font> Other Publications.
              </p>
-             <table id="sortingtable" class = "SortTable" style="padding-up: -2cm; padding-right: 7cm;">           
+          <div>
+            <table id="sortingtable" class = "SortTable" style="padding-up: -2cm; padding-right: 7cm;">           
 
               
               <tr style="cursor: pointer ;">
@@ -258,107 +245,108 @@ table.SortTable tr:hover {background-color: #5c5c5c9d;}
               </tr>
                
 
-            <tr>
-             <td><font color="limegreen"><b>[M3]</b></font></td>
-             <td>D. Radakovits and <b>N. Taherinejad</b> </td>
-             <td><i>“BEhavioral Leakage and IntEr-cycle Variability Emulator model for ReRAMs (BELIEVER)”</i>, arXiv:2103.04179, pp. 1-13,</td>
-             <td style="text-align: center;">2021</td>
-            </tr>
-    
-            <tr>
-             <td><font color="blue"><b>[J5]</b></font></td>
-             <td><b>N. Taherinejad</b></td>
-             <td><i>“SIXOR: Single-cycle In-memristor XOR”</i>, IEEE Transactions on Very Large Scale Integration Systems (TVLSI), pp. 1-11,</td>
-             <td style="text-align: center;">2021</td>
-            </tr>
+               <tr>
+                 <td style="text-align: center;"><font color="limegreen"><b>[M3]</b></font></td>
+                 <td>D. Radakovits and <b>N. Taherinejad</b> </td>
+                 <td> <a href="https://arxiv.org/abs/2103.04179" target="_blank"><i>“BEhavioral Leakage and IntEr-cycle Variability Emulator model for ReRAMs (BELIEVER)”</i> </a>, arXiv:2103.04179, pp. 1-13,</td>
+                 <td style="text-align: center;">2021</td>
+               </tr>
+       
+               <tr>
+                 <td style="text-align: center;"><font color="blue"><b>[J5]</b></font></td>
+                 <td><b>N. Taherinejad</b></td>
+                 <td><a href="https://ieeexplore.ieee.org/abstract/document/9382267" target="_blank"><i>“SIXOR: Single-cycle In-memristor XOR”</i></a>, IEEE Transactions on Very Large Scale Integration Systems (TVLSI), pp. 1-11, </td>
+                 <td style="text-align: center;">2021</td>
+               </tr>
+ 
+               <tr>
+                 <td style="text-align: center;"><font color="limegreen"><b>[M2]</b></font></td>
+                 <td>S. M. Laube and <b>N. Taherinejad</b></td>
+                 <td><a href="https://arxiv.org/abs/2101.07231" target="_blank"><i>“Device Variability Analysis for Memristive Material Implication”</i></a>, arXiv:2101.07231, pp. 1-12, </td>
+                 <td style="text-align: center;">2021</td>
+               </tr>
+               
+               <tr>
+                 <td style="text-align: center;"><font color="blue"><b>[J4]</b></font></td>
+                 <td>M. R. Alam, M. H. Najafi and <b>N. Taherinejad</b> </td>
+                 <td><a href="https://ieeexplore.ieee.org/abstract/document/9321508" target="_blank"><i>“Exact Stochastic Computing Multiplication in Memristive Memory”</i></a>, IEEE Design and Test, pp. 1-8, </td>
+                 <td style="text-align: center;">2021</td>
+               </tr>
+ 
+               <tr>
+                 <td style="text-align: center;"><font color="limegreen"><b>[M1]</b></font></td>
+                 <td>M. R. Alam, M. H. Najafi and <b>N. Taherinejad</b></td>
+                 <td><a href="https://arxiv.org/abs/2012.09918" target="_blank"> <i>“Sorting in Memristive Memory”</i> </a>, arXiv:2012.09918, pp. 1-10, </td>
+                 <td style="text-align: center;">2020</td>
+               </tr>
+ 
+               <tr>
+                 <td style="text-align: center;"><font color="blue"><b>[J3]</b></font></td>
+                 <td>D. Radakovits, <b>N. Taherinejad</b>, M. Cai, T. Delaroche, and S. Mirabbasi</td>
+                 <td><a href="https://ieeexplore.ieee.org/abstract/document/8967013" target="_blank"><i>“A Memristive Multiplier using Semi-Serial IMPLY-based Adder”</i> </a>, IEEE Transactions on Circuits and Systems I: Regular Papers, pp. 1495-1506, </td>
+                 <td style="text-align: center;">2020</td>
+               </tr>
+ 
+               <tr>
+                 <td style="text-align: center;"><font color="firebrick"><b>[C6]</b></font></td>
+                 <td>M. R. Alam, M. H. Najafi and <b>N. Taherinejad</b></td>
+                 <td><a href="https://ieeexplore.ieee.org/abstract/document/9180743" target="_blank"><i>“Exact In-Memory Multiplication Based on Deterministic Stochastic Computing”</i></a> ,2020 IEEE International Symposium on Circuits and Systems (ISCAS), pp. 1-5, </td>
+                 <td style="text-align: center;">2020</td>
+               </tr>
+ 
+               <tr>
+                 <td style="text-align: center;"><font color="blue"><b>[J2]</b></font></td>
+                 <td>S. G. Rohani <b>N. Taherinejad</b>, D. Radakovits </td>
+                 <td><a href="https://ieeexplore.ieee.org/abstract/document/8832255" target="_blank"><i>“A Semi-Parallel Full-Adder in IMPLY Logic”</i> </a>, IEEE Transactions on Very Large Scale Integration Systems (TVLSI), vol. 28, no.1, pp. 297-301, </td>
+                 <td style="text-align: center;">2020</td>
+               </tr>
+ 
+               <tr>
+                 <td style="text-align: center;"><font color="blue"><b>[J1]</b></font></td>
+                 <td><b>N. Taherinejad</b> and D. Radakovits </td>
+                 <td><a href="https://ieeexplore.ieee.org/abstract/document/8873419" target="_blank"><i>“From behavioral design of memristive circuits and systems to physical implementations”</i></a>, IEEE Circuit and Systems (CAS) Magazine, vol. 19(4), pp. 6-18, </td>
+                 <td style="text-align: center;">2019</td>
+               </tr>
+ 
+               <tr>
+                 <td style="text-align: center;"><font color="firebrick"><b>[C5]</b></font></td>
+                 <td><b>N. Taherinejad</b>, T. Delaroche, D. Radakovits, and S. Mirabbasi </td>
+                 <td><a href="https://ieeexplore.ieee.org/abstract/document/8961312" target="_blank"><i>“A semi-serial topology for compact and fast IMPLY-based memristive full adders”</i></a>, IEEE New Circuits and Systems symposium (NewCAS), pp. 1-4, </td>
+                 <td style="text-align: center;">2019</td>
+               </tr>
+ 
+               <tr>
+                 <td style="text-align: center;"><font color="firebrick"><b>[C4]</b></font></td>
+                 <td>D. Radakovits and <b>N. Taherinejad</b> </td>
+                 <td><a href="https://ieeexplore.ieee.org/abstract/document/8861788" target="_blank"><i>“Implementation and characterization of a memristive memory system”</i></a>, In 2019 IEEE 32nd Canadian Conference on Electrical and Computer Engineering (CCECE), pp. 1-5, </td>
+                 <td style="text-align: center;">2019</td>
+               </tr>
+ 
+               <tr>
+                 <td style="text-align: center;"><font color="firebrick"><b>[C3]</b></font></td>
+                 <td>S. Rohani G., <b>N. Taherinejad</b> </td>
+                 <td><a href="https://ieeexplore.ieee.org/abstract/document/7946813" target="_blank"><i>“An Improved Algorithm for IMPLY Logic Based Memristive Full-Adder”</i></a>, 2017 IEEE 30th Canadian Conference on Electrical and Computer Engineering (CCECE), pp. 1-4, </td>
+                 <td style="text-align: center;">2017</td>
+               </tr>
+ 
+               <tr>
+                 <td style="text-align: center;"><font color="firebrick"><b>[C2]</b></font></td>
+                 <td><b>N. Taherinejad</b>, S. Manoj P. D., M. Rathmair, A. Jantsch </td>
+                 <td><a href="https://ieeexplore.ieee.org/abstract/document/7751193" target="_blank"><i>“Fully digital write-in scheme for multi-bit memristive storage”</i></a>, 13th International Conference on Electrical Engineering, Computing Science and Automatic Control (CCE), Mexico City, Mexico, pp. 1-6, </td>
+                 <td style="text-align: center;">2016</td>
+               </tr>
+ 
+               <tr>
+                 <td style="text-align: center;"><font color="firebrick"><b>[C1]</b></font></td>
+                 <td><b>N. Taherinejad</b>, S. Manoj P. D., A. Jantsch </td>
+                 <td><a href="https://ieeexplore.ieee.org/abstract/document/7579868" target="_blank"><i>“Memristors' Potential for Multi-Bit Storage and Pattern Learning”</i></a>, IEEE Proceedings of the 9th European Modelling Symposium (EMS 2015), pp. 450-455, </td>
+                 <td style="text-align: center;">2015</td>
+               </tr>
+ 
 
-            <tr>
-              <td><font color="limegreen"><b>[M2]</b></font></td>
-              <td>S. M. Laube and <b>N. Taherinejad</b></td>
-              <td><i>“Device Variability Analysis for Memristive Material Implication”</i>, arXiv:2101.07231, pp. 1-12,</td>
-              <td style="text-align: center;">2021</td>
-            </tr>
-            
-            <tr>
-              <td><font color="blue"><b>[J4]</b></font></td>
-              <td>M. R. Alam, M. H. Najafi and <b>N. Taherinejad</b> </td>
-              <td><i>“Exact Stochastic Computing Multiplication in Memristive Memory”</i>, IEEE Design and Test, pp. 1-8,</td>
-              <td style="text-align: center;">2021</td>
-            </tr>
 
-            <tr>
-              <td><font color="limegreen"><b>[M1]</b></font></td>
-              <td>M. R. Alam, M. H. Najafi and <b>N. Taherinejad</b></td>
-              <td><i>“Sorting in Memristive Memory”</i>, arXiv:2012.09918, pp. 1-10,</td>
-              <td style="text-align: center;">2020</td>
-            </tr>
-
-            <tr>
-              <td><font color="blue"><b>[J3]</b></font></td>
-              <td>D. Radakovits, <b>N. Taherinejad</b>, M. Cai, T. Delaroche, and S. Mirabbasi</td>
-              <td><i>“A Memristive Multiplier using Semi-Serial IMPLY-based Adder”</i>, IEEE Transactions on Circuits and Systems I: Regular Papers, pp. 1495-1506,</td>
-              <td style="text-align: center;">2020</td>
-            </tr>
-
-            <tr>
-              <td><font color="firebrick"><b>[C6]</b></font></td>
-              <td>M. R. Alam, M. H. Najafi and <b>N. Taherinejad</b></td>
-              <td><i>“Exact In-Memory Multiplication Based on Deterministic Stochastic Computing”</i>,  2020 IEEE International Symposium on Circuits and Systems (ISCAS), pp. 1-5,</td>
-              <td style="text-align: center;">2020</td>
-            </tr>
-
-            <tr>
-              <td><font color="blue"><b>[J2]</b></font></td>
-              <td>S. G. Rohani <b>N. Taherinejad</b>, D. Radakovits </td>
-              <td><i>“A Semi-Parallel Full-Adder in IMPLY Logic”</i>, IEEE Transactions on Very Large Scale Integration Systems (TVLSI), vol. 28, no.1, pp. 297-301,</td>
-              <td style="text-align: center;">2020</td>
-            </tr>
-
-            <tr>
-              <td><font color="blue"><b>[J1]</b></font></td>
-              <td><b>N. Taherinejad</b> and D. Radakovits </td>
-              <td><i>“From behavioral design of memristive circuits and systems to physical implementations”</i>, IEEE Circuit and Systems (CAS) Magazine, vol. 19(4), pp. 6-18,</td>
-              <td style="text-align: center;">2019</td>
-            </tr>
-
-            <tr>
-              <td><font color="firebrick"><b>[C5]</b></font></td>
-              <td><b>N. Taherinejad</b>, T. Delaroche, D. Radakovits, and S. Mirabbasi </td>
-              <td><i>“A semi-serial topology for compact and fast IMPLY-based memristive full adders”</i>, IEEE New Circuits and Systems symposium (NewCAS), pp. 1-4,</td>
-              <td style="text-align: center;">2019</td>
-            </tr>
-
-            <tr>
-              <td><font color="firebrick"><b>[C4]</b></font></td>
-              <td>D. Radakovits and <b>N. Taherinejad</b> </td>
-              <td><i>“Implementation and characterization of a memristive memory system”</i>, In 2019 IEEE 32nd Canadian Conference on Electrical and Computer Engineering (CCECE), pp. 1-5,</td>
-              <td style="text-align: center;">2019</td>
-            </tr>
-
-            <tr>
-              <td><font color="firebrick"><b>[C3]</b></font></td>
-              <td>S. Rohani G., <b>N. Taherinejad</b> </td>
-              <td><i>“An Improved Algorithm for IMPLY Logic Based Memristive Full-Adder”</i>, 2017 IEEE 30th Canadian Conference on Electrical and Computer Engineering (CCECE), pp. 1-4,</td>
-              <td style="text-align: center;">2017</td>
-            </tr>
-
-            <tr>
-              <td><font color="firebrick"><b>[C2]</b></font></td>
-              <td><b>N. Taherinejad</b>, S. Manoj P. D., M. Rathmair, A. Jantsch </td>
-              <td><i>“Fully digital write-in scheme for multi-bit memristive storage”</i>, 13th International Conference on Electrical Engineering, Computing Science and Automatic Control (CCE), Mexico City, Mexico, pp. 1-6,</td>
-              <td style="text-align: center;">2016</td>
-            </tr>
-
-            <tr>
-              <td><font color="firebrick"><b>[C1]</b></font></td>
-              <td><b>N. Taherinejad</b>, S. Manoj P. D., A. Jantsch </td>
-              <td><i>“Memristors' Potential for Multi-Bit Storage and Pattern Learning”</i>, IEEE Proceedings of the 9th European Modelling Symposium (EMS 2015), pp. 450-455,</td>
-              <td style="text-align: center;">2015</td>
-            </tr>
-
-
-
-        </table>
+            </table>
+          </div>
 
 
         <script>
